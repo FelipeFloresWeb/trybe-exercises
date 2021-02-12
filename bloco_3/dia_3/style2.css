@@ -9,3 +9,7 @@ li:hover {
 li:active {
     color: rgb(255, 255, 255);
 }
+
+ol, ul {
+    list-style: none;
+}

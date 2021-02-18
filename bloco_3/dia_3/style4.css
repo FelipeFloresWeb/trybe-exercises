@@ -1,0 +1,41 @@
+.listaOrdenada {
+    background-color: yellow;
+}
+
+.listPar {
+    color: green;
+}
+
+.listPrimo {
+    text-transform: uppercase;
+}
+
+h1, h2, h3, h4 {
+    color: red;
+}
+
+h1 {
+    font-size: 40px;
+    border: black solid 1px;
+}
+
+li {
+    font-size: 20px;
+}
+
+.listPar .listPrimo {
+    font-weight: bolder;
+}
+
+.tresPrimeiras {
+    color: blue;
+}
+
+.tresPrimeirasJava {
+    background-color: rgb(209, 39, 144);
+}
+
+.listAliados:hover {
+    color: green;
+    font-weight: bolder;
+}

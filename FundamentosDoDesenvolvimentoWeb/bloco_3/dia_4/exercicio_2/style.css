@@ -105,3 +105,13 @@ a {
     margin-top: 20px;
     font-size: 20px;
 }
+
+#footer {
+    background-color: rgb(81, 153, 59);
+    height: 80px;
+}
+
+#textoFooter {
+    text-align: center;
+    padding-top: 20px;
+}

@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(175, 218, 231);
+}
+
+#listaHeader {
+    display: block;
+    background-color: blue;
+    background-size: cover;
+    height: 70px;
+    text-align: center;
+    
+}
+
+.elementoLista {
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    font-family: 'RocknRoll One', sans-serif;
+    padding-top: 1.5%;
+}
+
+#group {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+#titleGroup {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    margin-left: 20%;
+    margin-right: 10%;
+    margin-top: 3%;
+}
+
+#sobreConteudo {
+    margin-top: 50px;
+    margin-left: 10px;
+    position: relative;
+    width: 50%;
+    display: inline-block;
+    text-align: justify;
+    font-family:'RocknRoll One', sans-serif;
+}
+
+#sobre {
+    position: relative;
+    display: inline-block;
+    width: 47%;
+}
+
+
+#stomatopoda {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+#nomeCientifico {
+    display: inline-block;
+    font-family:'RocknRoll One', sans-serif;
+    font-size: 15px;
+    text-align: right;
+    position: relative;
+    width: 100%;
+}
+
+#familia {
+    position: relative;
+}

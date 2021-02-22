@@ -78,10 +78,10 @@ h2 {
     display: inline-block;
     position: relative;
     width: 100%;
+    background-image: url(imagens/fundoMar.jpg);
 }
 
 li {
-   
     font-style: italic;
     display: inline-block;
     font-weight: bolder;
@@ -93,4 +93,15 @@ li {
    display: inline-block;
    text-align: justify;
    width: 88%;
+   color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#videoReferencia {
+    margin-top: 20px;
+    font-size: 20px;
 }

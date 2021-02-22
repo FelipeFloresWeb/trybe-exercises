@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(175, 218, 231);
+    font-family:'RocknRoll One', sans-serif;
+}
+
+#listaHeader {
+    display: block;
+    background-color: blue;
+    background-size: cover;
+    height: 70px;
+    text-align: center;
+}
+
+.elementoLista {
+    display: inline-block;
+    width: 300px;
+    text-align: center; 
+    padding-top: 1.5%;
+}
+
+#group {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+#titleGroup {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    margin-left: 20%;
+    margin-right: 10%;
+    margin-top: 3%;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#sobreConteudo {
+    margin-left: 10px;
+    position: relative;
+    width: 50%;
+    display: inline-block;
+    text-align: justify;
+}
+
+#sobre {
+    position: relative;
+    display: inline-block;
+    width: 47%;
+}
+
+
+#stomatopoda {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+#nomeCientifico {
+    display: inline-block;
+    font-size: 15px;
+    text-align: right;
+    position: relative;
+    width: 100%;
+    font-style: italic;
+}
+
+#familia {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    background-image: url(imagens/fundoMar.jpg);
+}
+
+li {
+    font-style: italic;
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 17px; 
+    margin-left: 30px;   
+}
+
+#listFamilia {
+   display: inline-block;
+   text-align: justify;
+   width: 88%;
+   color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#videoReferencia {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#footer {
+    background-color: rgb(81, 153, 59);
+    height: 80px;
+}
+
+#textoFooter {
+    text-align: center;
+    padding-top: 20px;
+}

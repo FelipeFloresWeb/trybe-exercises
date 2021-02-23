@@ -8,19 +8,26 @@ body {
     font-family:'RocknRoll One', sans-serif;
 }
 
+header {
+    width: 100%;
+    background-color: blue;
+    position: fixed;
+    z-index: 1;
+}
+
 #listaHeader {
     display: block;
-    background-color: blue;
     background-size: cover;
     height: 70px;
-    text-align: center;
+    text-align: justify;
 }
 
 .elementoLista {
     display: inline-block;
-    width: 300px;
     text-align: center; 
-    padding-top: 1.5%;
+    padding-top: 1%;
+    font-size: 23px;
+    margin-left: 200px;
 }
 
 #group {
@@ -30,12 +37,12 @@ body {
 }
 
 #titleGroup {
+    padding-top: 90px;
     position: relative;
     text-align: center;
     font-size: 50px;
     margin-left: 20%;
     margin-right: 10%;
-    margin-top: 3%;
 }
 
 h2 {
@@ -47,7 +54,7 @@ h2 {
 #sobreConteudo {
     margin-left: 10px;
     position: relative;
-    width: 50%;
+    width: 45%;
     display: inline-block;
     text-align: justify;
 }
@@ -55,23 +62,32 @@ h2 {
 #sobre {
     position: relative;
     display: inline-block;
-    width: 47%;
+    width: 50%;
+    padding-left: 20px;
+    padding-bottom: 20px;
 }
 
 
 #stomatopoda {
-    display: inline-block;
+    display: block;
     position: relative;
     width: 100%;
 }
 
 #nomeCientifico {
-    display: inline-block;
+    display: block;
     font-size: 15px;
     text-align: right;
     position: relative;
     width: 100%;
     font-style: italic;
+    font-weight: 900;
+}
+
+#ultimoParagrafo {
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #familia {

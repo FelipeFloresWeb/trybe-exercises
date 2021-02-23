@@ -75,6 +75,8 @@ h2 {
 }
 
 #familia {
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
     display: inline-block;
     position: relative;
@@ -93,8 +95,9 @@ li {
 #listFamilia {
    display: inline-block;
    text-align: justify;
-   width: 88%;
+   width: 95%;
    color: white;
+   padding-bottom: 35px;
 }
 
 a {
@@ -105,14 +108,18 @@ a {
 #videoReferencia {
     margin-top: 20px;
     font-size: 20px;
+    text-align: center;
+    font-weight: 900;
 }
 
 #footer {
     background-color: rgb(81, 153, 59);
-    height: 80px;
+    height: 70px;
+    margin-top: 30px;
 }
 
 #textoFooter {
     text-align: center;
     padding-top: 20px;
+    font-size: 18px;
 }

@@ -1,11 +1,13 @@
-let a = 23;
-let b = 25;
-let c = 22;
+let a = 60;
+let b = 60;
+let c = 60;
 
-let isTriangle = a + b + c <= 180;
+let isTriangle = a + b + c;
 
-if (isTriangle <= 180) {
-  console.log(isTriangle)
+if (a < 0 || b < 0 || c < 0) {
+  console.log('Entre com um valor válido')
+} else if (isTriangle == 180) {
+  console.log(isTriangle == 180);
 } else {
-  console.log(isTriangle)
+  console.log(isTriangle == 180);
 }

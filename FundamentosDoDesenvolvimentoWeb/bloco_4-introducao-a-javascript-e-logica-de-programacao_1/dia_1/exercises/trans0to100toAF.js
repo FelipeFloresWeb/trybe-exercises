@@ -1,4 +1,4 @@
-let Porcentagem = 68;
+let Porcentagem = 52;
 
 if (Porcentagem > 100 || Porcentagem < 0) {
   Porcentagem = Porcentagem;
@@ -30,15 +30,15 @@ switch (Porcentagem) {
     break;
 
   case 'D':
-    console.log('D');
+    console.log(Porcentagem);
     break;
 
   case 'E':
-    console.log('E');
+    console.log(Porcentagem);
     break;
 
   case 'F':
-    console.log('F');
+    console.log(Porcentagem);
     break;
 
   default:

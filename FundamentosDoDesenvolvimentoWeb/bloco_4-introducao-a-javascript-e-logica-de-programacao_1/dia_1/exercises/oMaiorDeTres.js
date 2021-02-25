@@ -1,6 +1,6 @@
-let a = 5;
-let b = 3;
-let c = 8;
+let a = 4;
+let b = 4;
+let c = 5;
 
 if (a > b && a > c) {
   console.log(a);

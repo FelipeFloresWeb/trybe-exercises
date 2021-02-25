@@ -1,0 +1,15 @@
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let resultadoSoma = 0
+
+for(let index = 0; index < numbers.length; index += 1) {
+  let numeroAtual = numbers[index];
+   resultadoSoma = resultadoSoma + numeroAtual;
+}
+
+arithmeticAverage = resultadoSoma / numbers.length;
+
+if (arithmeticAverage > 20) {
+  console.log('valor maior que 20');
+} else {
+  console.log('valor menor ou igual a 20');
+}

@@ -1,0 +1,6 @@
+1. imprimir um quadrado de asteriscos;
+2. adicionar uma variavel array;
+3. imprimir estes asteriscos de acordo com o tamanho da de uma variavel "n";
+4. imprimir a quntidade de linhas correspondentes a variavel "n";
+5. um "for" para os asteriscos;
+6. outro "for" para as linhas;

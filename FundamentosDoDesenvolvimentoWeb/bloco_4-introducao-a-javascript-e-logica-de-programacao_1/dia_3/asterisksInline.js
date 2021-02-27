@@ -8,17 +8,6 @@
 // *****
 // *****
 
-// let n = 5;
-// let nArray = [];
-// let simbol = '*';
-
-// for (let index = 1; index <= n; index += 1) {
-
-//   nArray.push(simbol);
-
-//   console.log(nArray);
-  
-// }
 let n = 5;
 let simbol = '*';
 let imputLine = '';

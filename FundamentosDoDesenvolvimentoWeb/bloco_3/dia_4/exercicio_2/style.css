@@ -90,30 +90,47 @@ h2 {
     margin-right: 10px;
 }
 
-#familia {
+.photo {
+    background-image: url(imagens/fundoMar.jpg);
+    position: relative;
+    width: 100%;
+}
+
+
+.familia {
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
     display: inline-block;
     position: relative;
+    width: 100%;  
+    z-index: 5;  
+    font-size: 22px;
+}
+
+
+#table {
+    z-index: 5;
+    justify-content: center;
     width: 100%;
-    background-image: url(imagens/fundoMar.jpg);
+    text-align: center;
+    margin: auto;
+    position: relative;
+    color: white;
 }
 
-li {
-    font-style: italic;
-    display: inline-block;
-    font-weight: bolder;
-    font-size: 17px; 
-    margin-left: 30px;   
+td {
+    z-index: 5;
+    text-align: center;
+    width: auto;
+    position: relative;
 }
 
-#listFamilia {
-   display: inline-block;
-   text-align: justify;
-   width: 95%;
-   color: white;
-   padding-bottom: 35px;
+tr {
+    z-index: 5;
+    text-align: center;
+    width: auto;
+    position: relative;
 }
 
 a {

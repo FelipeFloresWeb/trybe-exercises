@@ -26,28 +26,70 @@
 //                                                linha 5: ((linha)5 - (n)7) / 2 = 1;
 //                                                linha 7: ((linha)7 - (n)7) / 2 = 0;
 
-// 2. Para encontrar os espaço entre os asteriscos: linha 1: (index0) (n)7 - (n)7 = 0;
-//                                                  linha 3: (index)2 - 1 = 1;
-//                                                  linha 5: (index)4 - 1 = 3;
-//                                                  linha 7: (n)7 - (linha)7 = 0;
+//** */ 2. Para encontrar os espaço entre os asteriscos: linha 1: (index0) (n)7 - (n)7 = 0;
+//** */                                                  linha 3: (index)2 - 1 = 1;
+//** */                                                  linha 5: (index)4 - 1 = 3;
+//** */                                                  linha 7: (n)7 - (linha)7 = 0;
 
-// 3. Para encontrar a quantidade de asteriscos: linha 1: (linha)1 = 1; if
-//                                               linha 3: 2; else
-//                                               linha 5: 2; else
-//                                               linha 7: (linha)7 = 7; else if
+//** */ 3. Para encontrar a quantidade de asteriscos: linha 1: (linha)1 = 1; if
+//** */                                             linha 3: 2; else
+//** */                                               linha 5: 2; else
+//** */                                               linha 7: (linha)7 = 7; else if
 
 
 
 let n = 7;
+let result = '';
 
-for(let linha = 0; linha < n; linha += 1) {
+for(let linha = 1; linha <= n; linha += 1) {
 
 let symbol = '';
-let initspace = '';
 let spacesSymbols = '';
+let initspace = '';
 
-if () {
-  
+// 1. Para encontrar o numero de espaços inicias:
+if(linha === n) {
+  initspace = '';
+} else {
+
+for(let index = 1; index <= (linha - n) / 2; index +=1) {
+  initspace += ' ';
+}
+
+}
+
+// 2. Para encontrar os espaço entre os asteriscos:
+if(linha === 1 || linha === n) {
+
+  for (let index = 0; index <= linha; index += 1) {
+    spacesSymbols = '';
+  }
+
+} else {
+
+  for (let index = 1; index < linha - 1; index += 1) {
+    spacesSymbols += ' ';
+  }
+
+}
+
+// 3. Para encontrar a quantidade de asteriscos:
+if(linha === 1 || linha === n) {
+
+  for (let index = 0; index < linha; index += 1) {
+    symbol += '*';
+  }
+
+} else {
+
+  for (let index = 0; index <= 1; index += 1) {
+    symbol += '*';
+  }
+
+}
+
+if(linha % 2 == 1) {
+  console.log(initspace+symbol+spacesSymbols);
 }
 
 }

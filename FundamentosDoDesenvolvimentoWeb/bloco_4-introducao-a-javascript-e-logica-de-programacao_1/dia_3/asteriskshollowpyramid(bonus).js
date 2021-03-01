@@ -32,7 +32,7 @@
 //** */                                                  linha 7: (n)7 - (linha)7 = 0;
 
 //** */ 3. Para encontrar a quantidade de asteriscos: linha 1: (linha)1 = 1; if
-//** */                                             linha 3: 2; else
+//** */                                               linha 3: 2; else
 //** */                                               linha 5: 2; else
 //** */                                               linha 7: (linha)7 = 7; else if
 
@@ -46,13 +46,14 @@ for(let linha = 1; linha <= n; linha += 1) {
 let symbol = '';
 let spacesSymbols = '';
 let initspace = '';
+if(linha % 2 == 1) {
 
 // 1. Para encontrar o numero de espaços inicias:
 if(linha === n) {
   initspace = '';
 } else {
 
-for(let index = 1; index <= (linha - n) / 2; index +=1) {
+for(let index = 1; index <= (n - linha) / 2; index +=1) {
   initspace += ' ';
 }
 
@@ -61,13 +62,13 @@ for(let index = 1; index <= (linha - n) / 2; index +=1) {
 // 2. Para encontrar os espaço entre os asteriscos:
 if(linha === 1 || linha === n) {
 
-  for (let index = 0; index <= linha; index += 1) {
+  for(let index = 0; index <= linha; index += 1) {
     spacesSymbols = '';
   }
 
 } else {
 
-  for (let index = 1; index < linha - 1; index += 1) {
+  for(let index = 1; index < linha - 1; index += 1) {
     spacesSymbols += ' ';
   }
 
@@ -77,19 +78,20 @@ if(linha === 1 || linha === n) {
 if(linha === 1 || linha === n) {
 
   for (let index = 0; index < linha; index += 1) {
-    symbol += '*';
+    spacesSymbols += '*';
   }
 
 } else {
 
   for (let index = 0; index <= 1; index += 1) {
-    symbol += '*';
+    
   }
 
-}
+} 
 
-if(linha % 2 == 1) {
-  console.log(initspace+symbol+spacesSymbols);
 }
+spacesSymbols += '*'+spacesSymbols+'*';
+
+console.log(initspace+spacesSymbols);
 
 }

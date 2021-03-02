@@ -2,7 +2,7 @@
 
 function isPalindromo(text) {
   
-  text = text.toLowerCase();text.split('');
+  text = text.toLowerCase();
 
   let word = '';
 

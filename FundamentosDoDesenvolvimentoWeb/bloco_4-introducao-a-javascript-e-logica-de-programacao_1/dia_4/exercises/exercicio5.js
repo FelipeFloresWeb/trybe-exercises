@@ -30,7 +30,7 @@ if (info.recorrente === 'Sim' && info2.recorrente === 'Sim') {
 if (info2.personagem === 'Tio Patinhas') {
   info2.personagem = " e Tio Patinhas";
   info2.origem = " e Christmas on Bear Mountain, Dell's Four Color Comics #178";
-  info2.nota = "e O último MacPatinhas";
+  info2.nota = " e O último MacPatinhas";
 }
 
 for(let index in info) {

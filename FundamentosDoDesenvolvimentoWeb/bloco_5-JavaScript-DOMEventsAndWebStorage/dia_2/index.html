@@ -84,25 +84,25 @@
       var insertText = div2.appendChild(createP).innerText = pText;
       // exercicio 4
 
-      //exercicio 5
+      // exercicio 5
       var divMainContent = document.querySelector(".main-content");
       var divLeftContent = document.createElement("div");
       var creatDivLeft = divMainContent.appendChild(divLeftContent).className = "left-content";
-      //exercicio 5
+      // exercicio 5
 
-      //exercicio 6
+      // exercicio 6
       var divRightContent = document.createElement("div");
       var creatDivRight = divMainContent.appendChild(divRightContent).className = "right-content";
-      //exercicio 6
+      // exercicio 6
 
-      //exercicio 7
+      // exercicio 7
       var divLeft = document.querySelector(".left-content");
       var createImg = document.createElement("img");
       var insertImg = divLeft.appendChild(createImg).src = "https://picsum.photos/200";
       var addClassImg = document.getElementsByTagName("img").className = "small-image";
-      //exercicio 7
+      // exercicio 7
 
-      //exercicio 8
+      // exercicio 8
       var divRight = document.querySelector(".right-content");
       var createUnorderList = document.createElement("ul");
       var insertUlList = divRight.appendChild(createUnorderList);
@@ -112,18 +112,22 @@
         var createElementsList = document.createElement("li");
         rightUl.appendChild(createElementsList).innerText = list[index];
       }
-      //exercicio 8
+      // exercicio 8
 
-      //exercicio 9
-      for (let index = 0; index < 2; index += 1) {
+      // exercicio 9
+      for (let index = 0; index < 3; index += 1) {
         var createH3 = document.createElement('h3')
-        var insertH3 = divMainContent.appendChild(createH3);
+        var insertH3 = divMainContent.appendChild(createH3).innerText = "Text";
       }
-      //exercicio 9
+      // exercicio 9
 
-      //exercicio 10
+      // exercicio 10
       var classH1 = document.getElementsByTagName("h1").className = "title";
-      //exercicio 10
+      // exercicio 10
+
+      // exercicio 11
+      var classH3 = document.getElementsByTagName("h3").className = "description";
+      // exercicio 11
     </script>
   </body>
 </html>
@@ -140,8 +144,8 @@ Para uma melhor organização, faça commits a cada tarefa concluída. Vamos aos
 ********Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6;
 ********Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
 ////////Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
-Adicione a classe title na tag h1 criada;
-Adicione a classe description nas 3 tags h3 criadas;
+********Adicione a classe title na tag h1 criada;
+********Adicione a classe description nas 3 tags h3 criadas;
 Remova o div criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
 Centralize o div criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto do div ;
 Troque a cor de fundo do elemento pai da div criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;

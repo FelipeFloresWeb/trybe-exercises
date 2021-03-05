@@ -101,6 +101,18 @@
       var insertImg = divLeft.appendChild(createImg).src = "https://picsum.photos/200";
       var addClassImg = document.getElementsByTagName("img").className = "small-image";
       //exercicio 7
+
+      //exercicio 8
+      var divRight = document.querySelector(".right-content");
+      var createUnorderList = document.createElement("ul");
+      var insertUlList = divRight.appendChild(createUnorderList);
+      var rightUl = document.querySelector("ul");
+      var list = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+      for (let index = 0; index < list.length; index += 1) {
+        var createElementsList = document.createElement("li");
+        rightUl.appendChild(createElementsList).innerText = list[index];
+      }
+      //exercicio 8
     </script>
   </body>
 </html>

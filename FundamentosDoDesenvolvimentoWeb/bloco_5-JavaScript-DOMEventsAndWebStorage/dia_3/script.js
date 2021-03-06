@@ -16,7 +16,6 @@ createDaysOfTheWeek();
 // Escreva seu código abaixo.
 
 // Exercício 1:
-
 function liCreator() {
   const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
   let daysList = document.querySelector("#days");
@@ -33,7 +32,7 @@ function liCreator() {
       daysList.appendChild(daysListItem);
     } else if (dezDaysList[index] === 25) {
       daysListItem.innerText = dezDaysList[index];
-      daysListItem.className = "day friday";
+      daysListItem.className = "day holiday friday";
       daysList.appendChild(daysListItem);
     } else {
       daysListItem.innerText = dezDaysList[index];
@@ -42,23 +41,19 @@ function liCreator() {
     }
   }
 }
-  
-  liCreator();
-  
-  
-  
-  
-  
-  
-  // if (li.innerHTML.includes(24, 25, 31)) {
-  //   li.className = "holiday";
-  // } if (li.innerHTML.includes(4, 11, 18, 25)) {
-  //   li.className = "fryday";
-  //  }
-  // }
+liCreator();
 // Exercício 1:
 
-
+// Exercício 2:
+function holidaysButton(string) {
+  const divButton = document.querySelector(".buttons-container");
+  const button = document.createElement("button");
+  button.id = "btn-holiday";
+  button.innerHTML = string;
+  divButton.appendChild(button);
+}
+holidaysButton("Feriados");
+// Exercício 2:
 
 // Exercício 1:
 // O array dezDaysList contém os dois últimos dias de novembro e os dias do mês de dezembro. Desenvolva uma função que crie dinamicamente cada dia do calendário e os adicione como filhos/filhas da tag <ul> com ID "days" . Note que os dias 29 e 30 de novembro estão no array pois representam respectivamente Segunda-feira e Terça-feira.

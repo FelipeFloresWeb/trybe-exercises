@@ -55,6 +55,27 @@ function holidaysButton(string) {
 holidaysButton("Feriados");
 // Exercício 2:
 
+
+// Exercício 3:
+function showHolidays() {
+  let button = document.querySelector("#btn-holiday");
+  let holidays = document.querySelector(".holiday");
+
+  function changecolor() {
+    let holiday = document.querySelector(".holiday");
+    if (holiday.style.backgroundColor === "blue") {
+      holiday.style.backgroundColor = "rgb(238,238,238)"
+    } else {
+      holiday.style.backgroundColor = "blue";
+    }
+  }
+
+  button.addEventListener("click", changecolor);
+
+}
+showHolidays()
+// Exercício 3:
+
 // Exercício 1:
 // O array dezDaysList contém os dois últimos dias de novembro e os dias do mês de dezembro. Desenvolva uma função que crie dinamicamente cada dia do calendário e os adicione como filhos/filhas da tag <ul> com ID "days" . Note que os dias 29 e 30 de novembro estão no array pois representam respectivamente Segunda-feira e Terça-feira.
 // Os dias devem estar contidos em uma tag <li> , e todos devem ter a classe day . Ex: <li class="day">3</li>

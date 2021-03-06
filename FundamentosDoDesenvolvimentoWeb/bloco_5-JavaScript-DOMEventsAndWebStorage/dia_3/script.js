@@ -60,7 +60,7 @@ function showHolidays() {
   let holidayButton = document.querySelector("#btn-holiday");
   let holidays = document.querySelectorAll('.holiday');
   let backgroundColor = 'rgb(238,238,238)';
-  let holidaysColor = 'blue';
+  let holidaysColor = 'white';
   holidayButton.addEventListener("click", changeColor);
   function changeColor() {
     for (let index = 0; index < holidays.length; index += 1) {
@@ -77,33 +77,38 @@ showHolidays();
 // Exercício 3:
 
 // Exercício 4:
-// function fridayButton(string) {
-//   const divButton = document.querySelector(".buttons-container");
-//   const button = document.createElement("button");
-//   button.id = "btn-friday";
-//   button.innerHTML = string;
-//   divButton.appendChild(button);
-// }
-// fridayButton("Sexta-feira");
+function fridayButton(string) {
+  const divButton = document.querySelector(".buttons-container");
+  const button = document.createElement("button");
+  button.id = "btn-friday";
+  button.innerHTML = string;
+  divButton.appendChild(button);
+}
+fridayButton("Sexta-feira");
 // // Exercício 4:
 
 // // Exercício 5:
-// function showFridays() {
-//   let button = document.querySelector("#btn-friday");
+function showFridays() {
+  let button = document.querySelector("#btn-friday");
+  let text = "Sexta-feira!";
 
-//   function setText() {
-//     let friday = document.querySelectorAll(".day .friday");
-//     if(friday.innerHTML === "Sexta-feira!") {
-//       friday.innerHTML = "";
-//     } else {
-//       friday.innerHTML = "Sexta-feira!";
-//     }
-//   }
-  
-//   button.addEventListener("click", setText);
-
-// }
-// showFridays()
+  button.addEventListener("click", setText);
+  function setText() {
+    let fridayslist = document.querySelectorAll(".friday");
+       if (fridayslist[0].innerHTML === "4") {
+        fridayslist[0].innerHTML = "Sexta-feira!";
+        fridayslist[1].innerHTML = "Sexta-feira!";
+        fridayslist[2].innerHTML = "Sexta-feira!";
+        fridayslist[3].innerHTML = "Sexta-feira!";
+      } else {
+        fridayslist[0].innerHTML = 4;
+        fridayslist[1].innerHTML = 11;
+        fridayslist[2].innerHTML = 18;
+        fridayslist[3].innerHTML = 25;
+      }
+    }
+  }
+showFridays()
 // // Exercício 5:
 
 

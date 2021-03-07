@@ -26,7 +26,7 @@ function liCreator() {
   const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
     20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
   let daysList = document.querySelector("#days");
-  for(let index = 0; index < dezDaysList.length; index += 1) {
+  for (let index = 0; index < dezDaysList.length; index += 1) {
     let daysListItem = document.createElement("li")
     if (dezDaysList[index] === 24 || dezDaysList[index] === 31) {
       let daysListItem = document.createElement("li");
@@ -70,11 +70,11 @@ function showHolidays() {
   let holidayButton = document.querySelector("#btn-holiday");
   let holidays = document.querySelectorAll('.holiday');
   let backgroundColor = 'rgb(238,238,238)';
-  let holidaysColor = 'white';
+  let holidaysColor = 'red';
   holidayButton.addEventListener("click", changeColor);
   function changeColor() {
     for (let index = 0; index < holidays.length; index += 1) {
-      let holidays = document.querySelectorAll(".holiday"); 
+      let holidays = document.querySelectorAll(".holiday");
       if (holidays[index].style.backgroundColor === holidaysColor) {
         holidays[index].style.backgroundColor = backgroundColor;
       } else {
@@ -108,19 +108,19 @@ function showFridays() {
   button.addEventListener("click", setText);
   function setText() {
     let fridayslist = document.querySelectorAll(".friday");
-       if (fridayslist[0].innerHTML === "4") {
-        fridayslist[0].innerHTML = "Sexta-feira!";
-        fridayslist[1].innerHTML = "Sexta-feira!";
-        fridayslist[2].innerHTML = "Sexta-feira!";
-        fridayslist[3].innerHTML = "Sexta-feira!";
-      } else {
-        fridayslist[0].innerHTML = 4;
-        fridayslist[1].innerHTML = 11;
-        fridayslist[2].innerHTML = 18;
-        fridayslist[3].innerHTML = 25;
-      }
+    if (fridayslist[0].innerHTML === "4") {
+      fridayslist[0].innerHTML = "Sexta-feira!";
+      fridayslist[1].innerHTML = "Sexta-feira!";
+      fridayslist[2].innerHTML = "Sexta-feira!";
+      fridayslist[3].innerHTML = "Sexta-feira!";
+    } else {
+      fridayslist[0].innerHTML = 4;
+      fridayslist[1].innerHTML = 11;
+      fridayslist[2].innerHTML = 18;
+      fridayslist[3].innerHTML = 25;
     }
   }
+}
 showFridays()
 
 // Exercício 6:
@@ -141,7 +141,7 @@ function mouseOut() {
   daysList.addEventListener("mouseout", zoomout);
   function zoomout(event) {
     event.target.style.fontWeight = '200';
-    event.target.style.fontSize = '20px'; 
+    event.target.style.fontSize = '20px';
   }
 }
 
@@ -224,18 +224,27 @@ function commitments() {
   textBox.addEventListener('keyup', addCommitmentsKeyEnter);
 
   function addCommitments() {
-    let input = document.querySelector('#task-input');
+    const input = document.querySelector('#task-input');
     let li = document.createElement('li');
-    li.innerText = input.value;
-    taskList.appendChild(li);
+    if (textBox.value === '') {
+      let messageAlert = 'Nenhum caractere foi digitado';
+      alert(messageAlert);
+    } else {
+      li.innerText = input.value;
+      taskList.appendChild(li);
+    }
   }
 
   function addCommitmentsKeyEnter(event) {
     if (event.key === 'Enter') {
-      let input = document.querySelector('#task-input');
-      let li = document.createElement('li');
-      li.innerText = input.value;
-      taskList.appendChild(li);
+      const input = document.querySelector('#task-input');
+      const li = document.createElement('li');
+      if (textBox.value === '') {
+        alert('Nenhum caractere foi digitado');
+      } else {
+        li.innerText = input.value;
+        taskList.appendChild(li);
+      }
     }
   }
 }

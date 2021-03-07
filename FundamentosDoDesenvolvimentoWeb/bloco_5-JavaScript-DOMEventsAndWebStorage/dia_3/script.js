@@ -215,3 +215,28 @@ changeDayColor();
 // Se nenhum caractere for inserido no campo input , a função deve retornar um alert com uma mensagem de erro ao clicar em "ADICIONAR".
 // Ao pressionar a tecla "enter" o evento também deverá ser disparado.
 // Dica - Propriedade: keyCode
+
+function commitments() {
+  const button = document.querySelector('#btn-add');
+  const textBox = document.querySelector('#task-input');
+  const taskList = document.querySelector('.task-list');
+  button.addEventListener('click', addCommitments);
+  textBox.addEventListener('keyup', addCommitmentsKeyEnter);
+
+  function addCommitments() {
+    let input = document.querySelector('#task-input');
+    let li = document.createElement('li');
+    li.innerText = input.value;
+    taskList.appendChild(li);
+  }
+
+  function addCommitmentsKeyEnter(event) {
+    if (event.key === 'Enter') {
+      let input = document.querySelector('#task-input');
+      let li = document.createElement('li');
+      li.innerText = input.value;
+      taskList.appendChild(li);
+    }
+  }
+}
+commitments();

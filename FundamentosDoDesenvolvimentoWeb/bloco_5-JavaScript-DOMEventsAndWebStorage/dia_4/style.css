@@ -51,9 +51,16 @@ body {
 
 #addText {
   height: 50px;
- width: 70%;
+  width: 70%;
 }
 
 #divButton {
-  text-align: center;
+  text-align: left;
+  padding-left: 10px;
+  padding-bottom: 20px;
+
+}
+
+#textInput {
+  text-align: left;
 }

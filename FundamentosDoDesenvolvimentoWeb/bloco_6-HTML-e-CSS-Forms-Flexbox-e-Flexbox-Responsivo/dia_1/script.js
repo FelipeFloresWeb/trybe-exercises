@@ -16,6 +16,7 @@ let data = 05 / 12 / 2018;// 05122018
 
 function checkDateInput(data) {
   // data = /\d+/g;
+  // selectDataInicio.value = `${data}`;
   data = `${data}`;
   data = data.split('/');
   const errorMsg = 'Formato de data inválido!';

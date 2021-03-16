@@ -15,6 +15,7 @@ function createState() {
     selectElementEstado.appendChild(createOption);
   }
 }
+window.onload = createState();
 
 function checkDateInput(data) {
   data = selectDataInicio.value.split('/')
@@ -66,7 +67,6 @@ function clearInputs() {
   selectTextArea.remove();
 }
 
-selectElementEstado.addEventListener('click', createState);
 selectButton.addEventListener('click', preventDefaultSettings);
 selectButton.addEventListener('click', sendInformations);
 selectButton.addEventListener('click', checkDateInput);

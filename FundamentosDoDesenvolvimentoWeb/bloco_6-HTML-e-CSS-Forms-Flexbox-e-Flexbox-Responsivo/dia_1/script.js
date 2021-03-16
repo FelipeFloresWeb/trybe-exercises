@@ -1,6 +1,7 @@
 const selectElementEstado = document.querySelector('#estado');
 const selectDataInicio = document.querySelector('#datainicio');
 const selectButton = document.querySelector('#send');
+const selectButtonClear = document.querySelector('#clear');
 const selectBody = document.querySelector('body');
 const selectForm = document.querySelector('#formulario');
 
@@ -31,10 +32,12 @@ function checkDateInput(data) {
 
 function sendInformations() {
   const selectInputs = document.querySelectorAll('input');
+  const selectTextArea = document.querySelector('#curriculo');
   const createDiv = document.createElement('div');
 
   createDiv.id = 'divformulario';
-  
+  createDiv.style.maxWidth = '1000px';
+  createDiv.style.display = 'block';
   selectBody.appendChild(createDiv);
 
   for (let index = 0; index < selectInputs.length; index += 1) {
@@ -42,13 +45,29 @@ function sendInformations() {
     createP.innerHTML = selectInputs[index].value;
     createDiv.appendChild(createP);
   }
+  const createP = document.createElement('p');
+  createP.innerHTML = selectTextArea.value;
+  createDiv.appendChild(createP);
+  
 }
 
 function preventDefaultSettings(event) {
   event.preventDefault();
 }
 
+function clearInputs() {
+  const selectInputs = document.querySelectorAll('input');
+  const selectLastDiv = document.querySelector('#divformulario');
+  const selectTextArea = document.querySelector('#curriculo');
+  for (let index = 0; index < selectInputs.length; index += 1) {
+    selectInputs[index].value = '';
+  }
+  selectLastDiv.remove();
+  selectTextArea.remove();
+}
+
 selectElementEstado.addEventListener('click', createState);
 selectButton.addEventListener('click', preventDefaultSettings);
 selectButton.addEventListener('click', sendInformations);
 selectButton.addEventListener('click', checkDateInput);
+selectButtonClear.addEventListener('click', clearInputs);

@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
@@ -52,12 +54,17 @@
         <input type="text" name="DescriçãoCargo" id="descricaoCargo" maxlength="500" required>
       </label>
       <label for="datainicio">Data de Inicio:
-        <input type="text" name="DataInicio" id="datainicio" placeholder="dd/mm/aaaa" required>
+        <input type="text" name="DataInicio" id="datepicker" placeholder="dd/mm/aaaa" required>
       </label>
     </fieldset>
   </form>
   <button id="send">Enviar Informações</button>
   <button id="clear">Redefinir Informações</button>
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <script src="pikaday.js"></script>
+<script>
+    var picker = new Pikaday({ field: document.getElementById('datepicker') });
+</script>
 </body>
 </html>

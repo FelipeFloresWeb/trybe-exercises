@@ -15,20 +15,7 @@ function createState() {
     selectElementEstado.appendChild(createOption);
   }
 }
-
-function checkDateInput(data) {
-  data = selectDataInicio.value.split('/')
-  const errorMsg = 'Formato de data inválido!';
-
-  if (parseInt(data[0]) > 31 || parseInt(data[0]) < 1) {
-    alert(errorMsg);
-  } if (parseInt(data[1]) > 12 || parseInt(data[1]) < 1) {
-    alert(errorMsg);
-  } if (parseInt(data[2]) > 2021 || parseInt(data[2]) < 1) {
-    alert(errorMsg);
-  }
-
-}
+createState();
 
 function sendInformations() {
   const selectInputs = document.querySelectorAll('input');
@@ -69,5 +56,4 @@ function clearInputs() {
 selectElementEstado.addEventListener('click', createState);
 selectButton.addEventListener('click', preventDefaultSettings);
 selectButton.addEventListener('click', sendInformations);
-selectButton.addEventListener('click', checkDateInput);
 selectButtonClear.addEventListener('click', clearInputs);

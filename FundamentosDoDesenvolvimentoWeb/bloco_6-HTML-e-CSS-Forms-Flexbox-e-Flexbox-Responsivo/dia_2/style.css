@@ -1,21 +1,21 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-body {
-  background-color: rgb(173, 179, 179);
-}
+  body {
+    background-color: rgb(173, 179, 179);
+  }
 
-label {
-  line-height: 30px;
-  font-size: 17px;
-  font-weight: 500;
-  color: black;
-}
+  label {
+    line-height: 30px;
+    font-size: 17px;
+    font-weight: 500;
+    color: black;
+  }
 
-legend {
-  font-size: 24px;
-  font-weight: 600;
-}
+  legend {
+    font-size: 24px;
+    font-weight: 600;
+  }

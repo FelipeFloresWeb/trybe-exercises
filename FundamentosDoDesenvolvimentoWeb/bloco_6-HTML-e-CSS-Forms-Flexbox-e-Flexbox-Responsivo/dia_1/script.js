@@ -22,6 +22,8 @@ function checkDateInput(data) {
   const errorMsg = 'Formato de data inválido!';
 
   if (parseInt(data[0]) > 31 || parseInt(data[0]) < 1) {
+    selectDataInicio.style.color = 'red';
+    selectDataInicio.style.border = '2px solid red';
     alert(errorMsg);
   } if (parseInt(data[1]) > 12 || parseInt(data[1]) < 1) {
     alert(errorMsg);

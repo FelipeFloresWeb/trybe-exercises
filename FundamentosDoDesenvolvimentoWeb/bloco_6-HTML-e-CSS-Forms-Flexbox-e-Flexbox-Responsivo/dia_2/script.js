@@ -8,6 +8,37 @@ const selectForm = document.querySelector('#formulario');
 function createState() {
   const estados = ['Acre', 'Amapá', 'Amazonas', 'Pará', 'Rondônia', 'Roraima', 'Tocantins', 'Alagoas', 'Bahia', 'Ceará', 'Maranhão', 'Paraíba', 'Pernambuco', 'Piauí', 'Rio Grande do Norte', 'Sergipe', 'Goiás', 'Mato Grosso', 'Mato Grosso do Sul', 'Distrito Federal', 'Espírito Santo', 'Minas Gerais', 'São Paulo', 'Rio de Janeiro', 'Paraná', 'Rio Grande do Sul', 'Santa Catarina'];
 
+
+  // {
+  //   AC: "Acre",
+  //   AL: "Alagoas",
+  //   AP: "Amapá",
+  //   AM: "Amazonas",
+  //   BA: "Bahia",
+  //   CE: "Ceará",
+  //   DF: "Distrito Federal",
+  //   ES: "Espírito Santo",
+  //   GO: "Goías",
+  //   MA: "Maranhão",
+  //   MT: "Mato Grosso",
+  //   MS: "Mato Grosso do Sul",
+  //   MG: "Minas Gerais",
+  //   PA: "Pará",
+  //   PB: "Paraíba",
+  //   PR: "Paraná",
+  //   PE: "Pernambuco",
+  //   PI: "Piauí",
+  //   RJ: "Rio de Janeiro",
+  //   RN: "Rio Grande do Norte",
+  //   RS: "Rio Grande do Sul",
+  //   RO: "Rondônia",
+  //   RR: "Roraíma",
+  //   SC: "Santa Catarina",
+  //   SP: "São Paulo",
+  //   SE: "Sergipe",
+  //   TO: "Tocantins",
+  // };
+
   for (let index = 0; index < estados.length; index += 1) {
     const element = estados[index];
     const createOption = document.createElement('option');

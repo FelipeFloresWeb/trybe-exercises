@@ -8,9 +8,8 @@
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
-
 <body>
-  <form action="" method="get">
+  <form action="" method="get" id="formulario">
     <fieldset title="Dados Pessoais">
       <legend>Informações Pessoais</legend>
       <label for="nome">Nome:
@@ -38,29 +37,26 @@
       </label>
       <br>
       <label for="casa">Casa
-        <input type="radio" name="CasaApartamento" id="casa" required>
+        <input type="radio" name="CasaApartamento" id="casa" value="casa" required>
       </label>
       <label for="apartamento">Apartamento
-        <input type="radio" name="CasaApartamento" id="apartamento" required>
+        <input type="radio" name="CasaApartamento" id="apartamento" value="apartamento" required>
       </label>
-    </fieldset>
-    <fieldset>
       <legend>Resumo do seu currículo:</legend>
-      <textarea name="Currículo" id="curriculo" cols="150" rows="10" maxlength="1000" required></textarea>
+      <textarea name="Currículo" id="curriculo" cols="50" rows="10" maxlength="1000" required></textarea>
+      <br>
       <label for="cargo">Cargo:
         <input type="text" name="Cargo" id="cargo" maxlength="40" required>
       </label>
-      <label for="descriçãoCargo">Descrição do Cargo:
-        <input type="text" name="DescriçãoCargo" id="descriçãoCargo" maxlength="500" required>
+      <label for="descricaoCargo">Descrição do Cargo:
+        <input type="text" name="DescriçãoCargo" id="descricaoCargo" maxlength="500" required>
       </label>
       <label for="datainicio">Data de Inicio:
         <input type="text" name="DataInicio" id="datainicio" placeholder="dd/mm/aaaa" required>
       </label>
-      <button id="send">Enviar Informações</button>
     </fieldset>
-    <script src="script.js"></script>
   </form>
+  <button id="send">Enviar Informações</button>
+  <script src="script.js"></script>
 </body>
-<br>
-
 </html>

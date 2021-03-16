@@ -12,7 +12,7 @@
 </head>
 <body>
   <form action="" method="get" id="formulario">
-    <fieldset title="Dados Pessoais">
+    <fieldset title="Dados Pessoais" name="data-validate-field" >
       <legend>Informações Pessoais</legend>
       <label for="nome">Nome:
         <input type="text" name="Nome" id="nome" maxlength="40" required>
@@ -63,6 +63,7 @@
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
   <script src="pikaday.js"></script>
+  <script src="just-validate/dist/js/just-validate.min.js"></script>
 <script>
     var picker = new Pikaday({ field: document.getElementById('datepicker') });
 </script>

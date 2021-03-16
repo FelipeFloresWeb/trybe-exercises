@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/FelipeFloresWeb/trybe-exercises#readme",
   "dependencies": {
+    "just-validate": "^1.5.0",
     "lint": "^0.7.0"
   },
   "devDependencies": {

@@ -59,14 +59,16 @@ function preventDefaultSettings(event) {
   var msg = '';
   for (let index = 0; index < allInputs.length; index += 1) {
     const element = allInputs[index];
-    if (element[index].value === '' || !element[index].checked) {
+    if (element[index].value === '') {
       msg += 'Campo' + element[index].id + 'está vazio<br>';
-    } 
+    } if (element[index].type === 'radio' && !element[index].checked) {
+      msg += 'Campo' + element[index].id + 'não esta selecionado<br>';
+    }
     
   }
   alert(msg);
 }
 
-// selectButton.addEventListener('click', preventDefaultSettings);
+selectButton.addEventListener('click', preventDefaultSettings);
 selectButton.addEventListener('click', checkDateInput);
 selectButton.addEventListener('click', sendInformations);

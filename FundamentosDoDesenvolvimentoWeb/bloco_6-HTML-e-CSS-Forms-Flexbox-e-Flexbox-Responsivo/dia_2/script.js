@@ -4,40 +4,10 @@ const selectButton = document.querySelector('#send');
 const selectButtonClear = document.querySelector('#clear');
 const selectBody = document.querySelector('body');
 const selectForm = document.querySelector('#formulario');
+const selectName = document.querySelector('#name');
 
 function createState() {
   const estados = ['Acre', 'Amapá', 'Amazonas', 'Pará', 'Rondônia', 'Roraima', 'Tocantins', 'Alagoas', 'Bahia', 'Ceará', 'Maranhão', 'Paraíba', 'Pernambuco', 'Piauí', 'Rio Grande do Norte', 'Sergipe', 'Goiás', 'Mato Grosso', 'Mato Grosso do Sul', 'Distrito Federal', 'Espírito Santo', 'Minas Gerais', 'São Paulo', 'Rio de Janeiro', 'Paraná', 'Rio Grande do Sul', 'Santa Catarina'];
-
-
-  // {
-  //   AC: "Acre",
-  //   AL: "Alagoas",
-  //   AP: "Amapá",
-  //   AM: "Amazonas",
-  //   BA: "Bahia",
-  //   CE: "Ceará",
-  //   DF: "Distrito Federal",
-  //   ES: "Espírito Santo",
-  //   GO: "Goías",
-  //   MA: "Maranhão",
-  //   MT: "Mato Grosso",
-  //   MS: "Mato Grosso do Sul",
-  //   MG: "Minas Gerais",
-  //   PA: "Pará",
-  //   PB: "Paraíba",
-  //   PR: "Paraná",
-  //   PE: "Pernambuco",
-  //   PI: "Piauí",
-  //   RJ: "Rio de Janeiro",
-  //   RN: "Rio Grande do Norte",
-  //   RS: "Rio Grande do Sul",
-  //   RO: "Rondônia",
-  //   RR: "Roraíma",
-  //   SC: "Santa Catarina",
-  //   SP: "São Paulo",
-  //   SE: "Sergipe",
-  //   TO: "Tocantins",
-  // };
 
   for (let index = 0; index < estados.length; index += 1) {
     const element = estados[index];
@@ -46,11 +16,25 @@ function createState() {
     selectElementEstado.appendChild(createOption);
   }
 }
-createState();
+window.onload = createState();
+
+function checkDateInput(data) {
+  data = selectDataInicio.value.split('/')
+  const errorMsg = 'Formato de data inválido!';
+
+  if (parseInt(data[0]) > 31 || parseInt(data[0]) < 1) {
+    alert(errorMsg);
+  } if (parseInt(data[1]) > 12 || parseInt(data[1]) < 1) {
+    alert(errorMsg);
+  } if (parseInt(data[2]) > 2021 || parseInt(data[2]) < 1) {
+    alert(errorMsg);
+  }
+
+}
 
 function sendInformations() {
   const selectInputs = document.querySelectorAll('input');
-  const selectTextArea = document.querySelector('#curriculo');
+  let selectTextArea = document.querySelector('#curriculo');
   const createDiv = document.createElement('div');
 
   createDiv.id = 'divformulario';
@@ -71,20 +55,20 @@ function sendInformations() {
 
 function preventDefaultSettings(event) {
   event.preventDefault();
-}
-
-function clearInputs() {
-  const selectInputs = document.querySelectorAll('input');
-  const selectLastDiv = document.querySelector('#divformulario');
-  const selectTextArea = document.querySelector('#curriculo');
-  for (let index = 0; index < selectInputs.length; index += 1) {
-    selectInputs[index].value = '';
+  const allInputs = document.querySelectorAll('input');
+  var msg = '';
+  for (let index = 0; index < allInputs.length; index += 1) {
+    const element = allInputs[index];
+    if (element[index].value === '') {
+      msg += 'Campo' + element[index].id + 'está vazio<br>';
+    } if (element[index].type === 'radio' && !element[index].checked) {
+      msg += 'Campo' + element[index].id + 'não esta selecionado<br>';
+    }
+    
   }
-  selectLastDiv.remove();
-  selectTextArea.remove();
+  alert(msg);
 }
 
-selectElementEstado.addEventListener('click', createState);
 selectButton.addEventListener('click', preventDefaultSettings);
+selectButton.addEventListener('click', checkDateInput);
 selectButton.addEventListener('click', sendInformations);
-selectButtonClear.addEventListener('click', clearInputs);

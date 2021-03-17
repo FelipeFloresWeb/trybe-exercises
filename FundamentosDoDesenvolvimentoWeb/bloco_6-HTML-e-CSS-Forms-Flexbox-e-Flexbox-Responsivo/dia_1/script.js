@@ -4,6 +4,7 @@ const selectButton = document.querySelector('#send');
 const selectButtonClear = document.querySelector('#clear');
 const selectBody = document.querySelector('body');
 const selectForm = document.querySelector('#formulario');
+const selectName = document.querySelector('#name');
 
 function createState() {
   const estados = ['Acre', 'Amapá', 'Amazonas', 'Pará', 'Rondônia', 'Roraima', 'Tocantins', 'Alagoas', 'Bahia', 'Ceará', 'Maranhão', 'Paraíba', 'Pernambuco', 'Piauí', 'Rio Grande do Norte', 'Sergipe', 'Goiás', 'Mato Grosso', 'Mato Grosso do Sul', 'Distrito Federal', 'Espírito Santo', 'Minas Gerais', 'São Paulo', 'Rio de Janeiro', 'Paraná', 'Rio Grande do Sul', 'Santa Catarina'];
@@ -22,8 +23,6 @@ function checkDateInput(data) {
   const errorMsg = 'Formato de data inválido!';
 
   if (parseInt(data[0]) > 31 || parseInt(data[0]) < 1) {
-    selectDataInicio.style.color = 'red';
-    selectDataInicio.style.border = '2px solid red';
     alert(errorMsg);
   } if (parseInt(data[1]) > 12 || parseInt(data[1]) < 1) {
     alert(errorMsg);
@@ -35,7 +34,7 @@ function checkDateInput(data) {
 
 function sendInformations() {
   const selectInputs = document.querySelectorAll('input');
-  const selectTextArea = document.querySelector('#curriculo');
+  let selectTextArea = document.querySelector('#curriculo');
   const createDiv = document.createElement('div');
 
   createDiv.id = 'divformulario';
@@ -56,20 +55,18 @@ function sendInformations() {
 
 function preventDefaultSettings(event) {
   event.preventDefault();
-}
-
-function clearInputs() {
-  const selectInputs = document.querySelectorAll('input');
-  const selectLastDiv = document.querySelector('#divformulario');
-  const selectTextArea = document.querySelector('#curriculo');
-  for (let index = 0; index < selectInputs.length; index += 1) {
-    selectInputs[index].value = '';
+  const allInputs = document.querySelectorAll('input');
+  var msg = '';
+  for (let index = 0; index < allInputs.length; index += 1) {
+    const element = allInputs[index];
+    if (element[index].value === '' || !element[index].checked) {
+      msg += 'Campo' + element[index].id + 'está vazio<br>';
+    } 
+    
   }
-  selectLastDiv.remove();
-  selectTextArea.remove();
+  alert(msg);
 }
 
-selectButton.addEventListener('click', preventDefaultSettings);
-selectButton.addEventListener('click', sendInformations);
+// selectButton.addEventListener('click', preventDefaultSettings);
 selectButton.addEventListener('click', checkDateInput);
-selectButtonClear.addEventListener('click', clearInputs);
+selectButton.addEventListener('click', sendInformations);

@@ -1,5 +1,5 @@
 const selectElementEstado = document.querySelector('#estado');
-const selectDataInicio = document.querySelector('#datainicio');
+const selectDataInicio = document.querySelector('#datepicker');
 const selectButton = document.querySelector('#send');
 const selectBody = document.querySelector('body');
 
@@ -15,16 +15,15 @@ function createState() {
 }
 window.onload = createState();
 
-function checkDateInput() {
-  const dataSplited = selectDataInicio.value.split('/');
+function checkDateInput(data) {
+  data = selectDataInicio.value.split('/');
   const errorMsg = 'Formato de data inválido!';
-  const alert = errorMsg;
 
-  if (parseInt(dataSplited[0], 10) > 31 || parseInt(dataSplited[0], 10) < 1) {
+  if (parseInt(data[0], 10) > 31 || parseInt(data[0], 10) < 1) {
     alert(errorMsg);
-  } if (parseInt(dataSplited[1], 10) > 12 || parseInt(dataSplited[1], 10) < 1) {
+  } if (parseInt(data[1], 10) > 12 || parseInt(data[1], 10) < 1) {
     alert(errorMsg);
-  } if (parseInt(dataSplited[2], 10) > 2021 || parseInt(dataSplited[2], 10) < 1) {
+  } if (parseInt(data[2], 10) > 2021 || parseInt(data[2], 10) < 1) {
     alert(errorMsg);
   }
 }
@@ -53,16 +52,15 @@ function preventDefaultSettings(event) {
   event.preventDefault();
   const allInputs = document.querySelectorAll('input', 'select', 'textarea');
   let msg = '';
-  const alert = msg;
   for (let index = 0; index < allInputs.length; index += 1) {
     const element = allInputs[index];
-    if (element[index].value === '') {
-      msg += `Campo ${element[index].id} está vazio<br>`;
-    } if (element[index].type === 'radio' && !element[index].checked) {
-      msg += `Campo ${element[index].id} não esta selecionado<br>`;
+    if (element.value === '') {
+      msg += `Campo ${element.id} está vazio `;
+    } if (element.type === 'radio' && !element.checked) {
+      msg += `Campo ${element.id} não esta selecionado `;
     }
   }
-  alert();
+  alert(msg);
 }
 
 selectButton.addEventListener('click', preventDefaultSettings);

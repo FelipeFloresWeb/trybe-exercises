@@ -23,6 +23,7 @@ body {
 .menu-container {
   display: flex;
   flex-grow: 1;
+  align-self: center;
 }
 
 .menu-container ul {

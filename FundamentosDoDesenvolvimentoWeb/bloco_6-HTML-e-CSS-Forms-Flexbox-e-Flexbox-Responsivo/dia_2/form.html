@@ -7,12 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-grid.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <link href="validation.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
-  <form action="" method="get" id="formulario" class="js-form form">
-    <fieldset title="Dados Pessoais" name="data-validate-field" >
+  <form action="" method="GET">
+    <fieldset title="Dados Pessoais">
           <legend>Informações Pessoais</legend>
       <label for="nome">Nome:
         <input type="text" data-validate-field = "text" name="Nome" id="nome" maxlength="40" placeholder="Escreva seu nome" data-validate-field="name" required>
@@ -64,6 +65,7 @@
   <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
   <script src="pikaday.js"></script>
   <script src="just-validate/dist/js/just-validate.min.js"></script>
+  <script src="validation.min.js"></script> 
 <script>
     var picker = new Pikaday({ field: document.getElementById('datepicker') });
 </script>

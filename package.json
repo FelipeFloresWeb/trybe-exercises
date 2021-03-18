@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "eslint": "^7.22.0"
+  },
+  "dependencies": {
+    "popup-validation": "^3.0.3"
   }
 }

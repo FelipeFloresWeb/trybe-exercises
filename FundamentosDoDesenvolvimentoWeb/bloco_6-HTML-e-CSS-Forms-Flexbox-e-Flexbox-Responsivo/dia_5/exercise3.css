@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 #container {
   margin: 0 auto;
   width: 100%;
@@ -45,16 +51,20 @@
 #content-container {
   float: left;
   width: 100%;
-  background: #FFF;
+  background: #fff;
 }
 
 #content {
   clear: left;
   float: left;
-  width: 60%;
+  width: 77%;
   padding: 20px 0;
   margin: 0 0 0 4%;
   display: inline;
+}
+
+h3 {
+  font-size: 17px;
 }
 
 #content h2 {
@@ -63,7 +73,7 @@
 
 #aside {
   float: right;
-  width: 33%;
+  width: 15%;
   padding: 20px 0;
   margin: 0 3% 0 0;
   display: inline;
@@ -82,20 +92,138 @@
 }
 
 @media print {
-  #header, #navigation, #footer {
-    display: none;
+  #header,
+  #navigation,
+  #footer {
+    display: none !important;
   }
 
   p {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 
   h3 {
-    font-size: 15px;
+    font-size: 15px !important;
   }
 
   #aside {
-    font-size: 15px;
-    width: 90%;
+    font-size: 15px !important;
+    width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    margin: 0;
+    padding: 0;
+  }
+
+  #aside {
+    display: none;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  #header {
+    position: fixed;
+    width: 100%;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+  }
+
+  #navigation {
+    margin-top: 80px;
+  }
+
+  #content {
+    text-align: center;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #aside {
+    display: none;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  #header {
+    position: fixed;
+    width: 100%;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+  }
+
+  #navigation {
+    margin-top: 80px;
+  }
+
+  #content {
+    text-align: center;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 240px) {
+  #aside {
+    display: none;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  #header {
+    position: fixed;
+    width: 100%;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+  }
+
+  #navigation {
+    margin-top: 80px;
+  }
+
+  #content {
+    text-align: center;
+    width: 95%;
   }
 }

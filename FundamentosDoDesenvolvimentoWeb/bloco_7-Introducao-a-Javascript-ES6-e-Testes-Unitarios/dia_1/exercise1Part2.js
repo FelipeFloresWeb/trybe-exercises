@@ -4,7 +4,6 @@
 // produto de todos os inteiros menores ou iguais a N . Exemplo: 4! = 4 * 3 * 2 * 1 = 24.
 // Bônus (opcional): tente fazer o mesmo
 // exercício de forma recursiva . Spoiler:
-// É possível resolver com uma linha usando ternary operator .
 
 function fatorialOf(number) {
   let result = 1;
@@ -16,3 +15,14 @@ function fatorialOf(number) {
   return result;
 }
 console.log(fatorialOf(6));
+
+// É possível resolver com uma linha usando ternary operator .
+
+function fatorialOfInTernary(number) {
+  let result = 1;
+  for (let index = number; index > 0; index -= 1) {
+    result *= index;
+  }
+  return result;
+}
+console.log(fatorialOfInTernary(0));

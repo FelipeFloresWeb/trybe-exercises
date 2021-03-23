@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  margin: 0 auto;
+  width: 100%;
+  background: #fff;
+}
+
+#header {
+  background: #ccc;
+  padding: 20px;
+}
+
+#header h1 {
+  margin: 0;
+}
+
+#navigation {
+  float: left;
+  width: 100%;
+  background: #333;
+}
+
+#navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+#navigation ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+#navigation li a {
+  display: block;
+  float: left;
+  padding: 5px 10px;
+  color: #fff;
+  text-decoration: none;
+  border-right: 1px solid #fff;
+}
+
+#navigation li a:hover {
+  background: #383;
+}
+
+#content-container {
+  float: left;
+  width: 100%;
+  background: #fff;
+}
+
+#content {
+  clear: left;
+  float: left;
+  width: 77%;
+  padding: 20px 0;
+  margin: 0 0 0 4%;
+  display: inline;
+}
+
+h3 {
+  font-size: 17px;
+}
+
+#content h2 {
+  margin: 0;
+}
+
+#aside {
+  float: right;
+  width: 15%;
+  padding: 20px 0;
+  margin: 0 3% 0 0;
+  display: inline;
+}
+
+#aside h3 {
+  margin: 0;
+}
+
+#footer {
+  clear: left;
+  background: #ccc;
+  text-align: right;
+  padding: 20px;
+  height: 1%;
+}
+
+@media print {
+  #header,
+  #navigation,
+  #footer {
+    display: none !important;
+  }
+
+  p {
+    font-size: 14px !important;
+  }
+
+  h3 {
+    font-size: 15px !important;
+  }
+
+  #aside {
+    font-size: 15px !important;
+    width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    margin: 0;
+    padding: 0;
+  }
+
+  #aside {
+    display: none;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  #header {
+    position: fixed;
+    width: 100%;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+  }
+
+  #navigation {
+    margin-top: 80px;
+  }
+
+  #content {
+    text-align: center;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #aside {
+    display: none;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  #header {
+    position: fixed;
+    width: 100%;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+  }
+
+  #navigation {
+    margin-top: 80px;
+  }
+
+  #content {
+    text-align: center;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 240px) {
+  #aside {
+    display: none;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  #header {
+    position: fixed;
+    width: 100%;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+  }
+
+  #navigation {
+    margin-top: 80px;
+  }
+
+  #content {
+    text-align: center;
+    width: 95%;
+  }
+}

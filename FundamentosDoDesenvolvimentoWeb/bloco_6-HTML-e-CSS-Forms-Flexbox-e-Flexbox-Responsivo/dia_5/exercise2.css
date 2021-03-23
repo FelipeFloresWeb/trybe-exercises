@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(230, 222, 116);
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+header {
+  background-color: indigo;
+}
+
+#title {
+  font-size: 30px;
+  color: rgb(233, 222, 68);
+  padding: 10px 10px;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  padding-bottom: 1%;
+  margin: auto;
+}
+
+#nav {
+  display: flex;
+  color: rgb(233, 222, 68);
+}
+
+h2, h1, p {
+  margin: 2vh;
+}
+
+p {
+  max-width: 97%;
+}
+
+aside {
+  
+}

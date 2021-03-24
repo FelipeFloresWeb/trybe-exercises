@@ -34,15 +34,22 @@ const order = {
   },
 };
 
-const customerInfo = (order) => {
-return `Olá ${order.name}, entrega para: ${order.order.delivery.deliveryPerson}, telefone: ${order.phoneNumber}, R.${order.address.street}, Nº ${order.address.number}, AP: ${order.address.apartment}`
+const customerInfo = () => {
+  return `Olá ${order.name}, entrega para: ${order.order.delivery.deliveryPerson}, telefone: ${order.phoneNumber}, R.${order.address.street}, Nº ${order.address.number}, AP: ${order.address.apartment}`
 };
 
-console.log(customerInfo(order));
+console.log(customerInfo());
 
-const orderModifier = (order) => {
-  // Adicione abaixo as informações necessárias.
-
+const newType = {
+  type: 'margherita',
 };
 
-orderModifier(order);
+order.order.delivery.deliveryPerson = 'Luiz Silva';
+
+const orderModifier = () => {
+  Object.assign(order, newType);
+  order.order.drinks.price = '15';
+  return `Olá ${order.order.delivery.deliveryPerson}, o total do seu pedido de ${order.type} e ${order.order.drinks.coke.type} é ${order.order.drinks.price + order.order.pizza.margherita.price}`;
+};
+
+console.log(orderModifier());

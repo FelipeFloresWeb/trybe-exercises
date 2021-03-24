@@ -49,8 +49,9 @@ console.log(addTrybexAqui(skills));
 // HTML; ... #goTrybe".
 
 // const phrase = addTrybexWin(skills);
-const phrase2 = () => {
-  const phrase = addTrybexAqui(skills);
+const phrase2 = (string) => {
+  // const rep = /x/g;
+  const phrase = string;
   const orderArray = skills.sort();
   const newphrase = 'Minhas cinco principais habilidades são:';
 
@@ -58,4 +59,4 @@ const phrase2 = () => {
 };
 
 // eslint-disable-next-line no-console
-console.log(phrase2());
+console.log(phrase2(addTrybexAqui(skills)));

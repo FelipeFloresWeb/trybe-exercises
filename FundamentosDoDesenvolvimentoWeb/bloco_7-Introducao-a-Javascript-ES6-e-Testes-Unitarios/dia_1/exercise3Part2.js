@@ -7,9 +7,6 @@
 const selectButton = document.querySelector('#contadorButton');
 const selectP = document.querySelector('#contador');
 
-function contador() {
-  const count = 1;
-  selectP.innerHTML = parseInt(selectP.innerHTML, 10) + parseInt(count, 10);
-}
-
-selectButton.addEventListener('click', contador);
+selectButton.addEventListener('click', () => {
+  selectP.innerHTML = parseInt(selectP.innerHTML, 10) + parseInt(1, 10);
+});

@@ -37,3 +37,9 @@ console.log(addPropertyToAnObject(lesson2, 'turno', 'manhã'));
 const showObjectKeys = (obj) => Object.keys(obj);
 
 console.log(showObjectKeys(lesson2));
+
+// 3. Crie uma função para mostrar o tamanho de um objeto.
+
+const showObjectLenght = (obj) => Object.keys(obj).length;
+
+console.log(showObjectLenght(lesson2));

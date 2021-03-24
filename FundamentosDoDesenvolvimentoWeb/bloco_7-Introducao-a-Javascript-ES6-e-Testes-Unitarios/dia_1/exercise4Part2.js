@@ -11,16 +11,18 @@
 
 // consulta método .replace() https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/replaceola%20tenho%2032%20anos%20e%20faz%202%20dias%20let%20numbers%20=%20frase(//w(x)+/g)
 
+const skills = ['Javascipt', ' HTML', ' CSS', ' Git', ' GitHub'];
+
 function addTrybexWin(string) {
   // let re = /x/gi;
-  let output = 'Tryber x aqui!';
-  let result = output.replace('x', string);
+  const output = 'Tryber x aqui!';
+  const result = output.replace('x', string);
   return result;
 }
-const word = 'Willian';
-console.log(addTrybexWin(word));
 
-// function addTrybexWin(string) {
+console.log(addTrybexWin(skills));
+
+// function addTrybexAqui(string) {
 //   let output = 'Tryber x aqui!';
 //   let result = '';
 //   let arrayOutput = output.split(' ');

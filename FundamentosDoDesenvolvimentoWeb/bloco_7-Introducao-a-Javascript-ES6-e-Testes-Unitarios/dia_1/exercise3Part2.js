@@ -5,10 +5,10 @@
 // de clicks no botão conforme a variável clickCount é atualizada.
 // Crie um código JavaScript com a seguinte especificação:
 const selectButton = document.querySelector('#contadorButton');
-let selectP = document.querySelector('#contador');
+const selectP = document.querySelector('#contador');
 
 function contador() {
-  let count = 1;
+  const count = 1;
   selectP.innerHTML = parseInt(selectP.innerHTML, 10) + parseInt(count, 10);
 }
 

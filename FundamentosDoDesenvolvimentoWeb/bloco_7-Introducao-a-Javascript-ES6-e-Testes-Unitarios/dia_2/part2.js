@@ -36,10 +36,26 @@ console.log(addPropertyToAnObject(lesson2, 'turno', 'manhã'));
 
 const showObjectKeys = (obj) => Object.keys(obj);
 
-console.log(showObjectKeys(lesson2));
+console.log(showObjectKeys(lesson1));
 
 // 3. Crie uma função para mostrar o tamanho de um objeto.
 
 const showObjectLenght = (obj) => Object.keys(obj).length;
 
 console.log(showObjectLenght(lesson2));
+
+// 4.Crie uma função para listar os valores de um
+// objeto. Essa função deve receber um objeto como parâmetro.
+
+const showObjectValue = (obj) => Object.values(obj);
+
+console.log(showObjectValue(lesson3));
+
+// Crie um objeto de nome allLessons , que deve agrupar
+// todas as aulas através do Object.assign . Cada chave desse
+// novo objeto será uma aula, sendo essas chaves: lesson1 , lesson2
+// e lesson3 .
+
+const allLessons = Object.assign(lesson1, lesson2, lesson3);
+
+console.log(allLessons);

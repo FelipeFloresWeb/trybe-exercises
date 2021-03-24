@@ -52,3 +52,36 @@ for (index in pairKeyValue) {
   // eslint-disable-next-line no-undef
   console.log('Capital:', pairKeyValue[index][1]);
 }
+
+// Método Assign:
+// recebe pelo menos dois parâmetros, de forma que o primeiro
+// sempre será o objeto de destino, e os parâmetros restantes serão
+// os valores que serão adicionados a esse objeto destino.
+
+const person = {
+  name: 'Alberto',
+  lastName: 'Gomes',
+  age: 20,
+};
+
+const info = {
+  age: 23,
+  job: 'engenheiro',
+};
+
+const family = {
+  children: ['Maria', 'João'],
+  wife: 'Ana',
+};
+
+Object.assign(person, info, family);
+console.log(person);
+
+/* Output
+  { name: 'Alberto',
+  lastName: 'Gomes',
+  age: 23,
+  job: 'engenheiro',
+  child: [ 'Maria', 'João' ],
+  wife: 'Ana'
+  } */

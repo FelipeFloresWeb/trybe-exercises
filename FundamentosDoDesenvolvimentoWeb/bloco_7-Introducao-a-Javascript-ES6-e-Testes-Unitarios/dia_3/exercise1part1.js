@@ -52,8 +52,8 @@ function myRemove(arr, item) {
 // Retornou o array esperado;
 
 // 7. Verifique se a chamada myRemove([1, 2, 3, 4], 3) não retorna o array [1, 2, 3, 4];
-const expected = myRemove([1, 2, 3, 4], 3);
-assert.notDeepStrictEqual(expected, [1, 2, 3, 4], 'Erro: o Array foi alterado');
+// const expected = myRemove([1, 2, 3, 4], 3);
+// assert.notDeepStrictEqual(expected, [1, 2, 3, 4], 'Erro: o Array foi alterado');
 // OK! Não retorna o array [1, 2, 3, 4];
 
 // 8. Verifique se o array passado por parâmetro não sofreu alterações;
@@ -66,3 +66,21 @@ assert.notDeepStrictEqual(expected, [1, 2, 3, 4], 'Erro: o Array foi alterado');
 /* assert.deepStrictEqual(expected, [1, 2, 3, 4], 'Erro: o Array
 foialterado por um numero que nao existe'); */
 // Ok Retornou [1, 2, 3, 4];
+
+/* 10 .A função myRemoveWithoutCopy(arr, item) recebe um array arr e retorna o próprio array sem o
+elemento item caso ele exista no array */
+
+function myRemoveWithoutCopy(arr, item) {
+  for (let index = 0, len = arr.length; index < len; index += 1) {
+    if (arr[index] === item) {
+      arr.splice(i, 1);
+      index -= 1;
+      len -= 1;
+    }
+  }
+
+  return arr;
+}
+
+const expected = myRemove([1, 2, 3, 4], 3);
+assert.deepStrictEqual(expected, [1, 2, 3, 4], 'Erro: O array sofreu alteração');

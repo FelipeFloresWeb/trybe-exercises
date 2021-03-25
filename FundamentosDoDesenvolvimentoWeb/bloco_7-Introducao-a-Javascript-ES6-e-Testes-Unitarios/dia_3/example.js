@@ -1,3 +1,8 @@
+// TDD:
+// 1. Escreva um teste que falhe;
+// 2. Faça o codigo funcionar;
+// 3. Elimine redundância;
+
 /* eslint-disable no-console */
 const assert = require('assert');
 
@@ -41,3 +46,13 @@ function division(x, y) {
 
 assert.strictEqual(division(10, 2), 5); // OK
 assert.throws(() => { division(10, 0); }, /^Error: parameter y must not be 0$/);
+
+// Exemplo do uso do throw:
+function sum(value1, value2) {
+  if (typeof (value1) !== 'number' || typeof (value2) !== 'number') {
+    throw new Error('valores devem ser numeros');
+  }
+  return value1 + value2;
+}
+
+sum(5, '5');

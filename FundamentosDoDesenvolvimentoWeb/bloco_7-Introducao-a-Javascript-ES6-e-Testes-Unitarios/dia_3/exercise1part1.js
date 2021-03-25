@@ -73,7 +73,7 @@ elemento item caso ele exista no array */
 function myRemoveWithoutCopy(arr, item) {
   for (let index = 0, len = arr.length; index < len; index += 1) {
     if (arr[index] === item) {
-      arr.splice(i, 1);
+      arr.splice(index, 1);
       index -= 1;
       len -= 1;
     }
@@ -82,5 +82,11 @@ function myRemoveWithoutCopy(arr, item) {
   return arr;
 }
 
-const expected = myRemove([1, 2, 3, 4], 3);
-assert.deepStrictEqual(expected, [1, 2, 3, 4], 'Erro: O array sofreu alteração');
+// const expected = myRemove([1, 2, 3, 4], 3);
+// assert.deepStrictEqual(expected, [1, 2, 3, 4], 'Erro: O array sofreu alteração');
+
+/* 11. Verifique se a chamada myRemoveWithoutCopy([1, 2, 3, 4], 3) retorna o array esperado */
+const expected = myRemoveWithoutCopy([1, 2, 3, 4], 3);
+assert.deepStrictEqual(expected, [1, 2, 4], 'Erro: O item 3 não foi removido');
+// subustituido variavel 'i' por 'index' linha 76 Coluna 18;
+// retornou o array esperado;

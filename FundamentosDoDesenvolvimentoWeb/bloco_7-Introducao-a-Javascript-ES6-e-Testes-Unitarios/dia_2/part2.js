@@ -73,3 +73,10 @@ function sumStudents(numeros) {
 }
 
 console.log(sumStudents(allLessons));
+
+/* 7. Crie uma função que obtenha o valor da chave de
+acordo com a sua posição no objeto. Por exemplo: */
+
+const getValue = (obj, posicao) => Object.keys(obj)[posicao];
+
+console.log(getValue(allLessons, 0));

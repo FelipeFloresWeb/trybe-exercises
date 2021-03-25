@@ -2,13 +2,13 @@
 
 const assert = require('assert');
 
-function sum(a, b) {
-  if (typeof a !== 'number' || typeof b !== 'number') {
-    throw new Error('parameters must be numbers');
-  }
+// function sum(a, b) {
+//   if (typeof a !== 'number' || typeof b !== 'number') {
+//     throw new Error('parameters must be numbers');
+//   }
 
-  return a + b;
-}
+//   return a + b;
+// }
 
 // const expected = sum(2, 2);
 // assert.strictEqual(expected, 9, '2 + 2 = 4');
@@ -29,6 +29,22 @@ function sum(a, b) {
 /* 5. Teste se a mensagem de erro é "parameters must be numbers" quando
 realizar a chamada sum(4, "5") */
 
-const expected = sum(4, '5');
-assert.strictEqual(expected, 9, `4 + ${5} = 9`);
+// const expected = sum(4, '5');
+// assert.strictEqual(expected, 9, `4 + ${5} = 9`);
 // Mensagem retornada: parameters must be numbers;
+
+/* 6. A função myRemove(arr, item) recebe um array arr e retorna uma
+cópia desse array sem o elemento item caso ele exista no array */
+
+function myRemove(arr, item) {
+  let newArr = [];
+  for (let index = 0; index < arr.length; index += 1) {
+    if (item !== arr[index]) {
+      newArr.push(arr[index]);
+    }
+  }
+  return newArr;
+}
+
+const expected = myRemove([1, 2, 3, 4], 3);
+assert.deepStrictEqual(expected, [1, 2, 4], 'Erro: O numero 3 não foi removido');

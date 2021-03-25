@@ -70,17 +70,17 @@ foialterado por um numero que nao existe'); */
 /* 10 .A função myRemoveWithoutCopy(arr, item) recebe um array arr e retorna o próprio array sem o
 elemento item caso ele exista no array */
 
-function myRemoveWithoutCopy(arr, item) {
-  for (let index = 0, len = arr.length; index < len; index += 1) {
-    if (arr[index] === item) {
-      arr.splice(index, 1);
-      index -= 1;
-      len -= 1;
-    }
-  }
+// function myRemoveWithoutCopy(arr, item) {
+//   for (let index = 0, len = arr.length; index < len; index += 1) {
+//     if (arr[index] === item) {
+//       arr.splice(index, 1);
+//       index -= 1;
+//       len -= 1;
+//     }
+//   }
 
-  return arr;
-}
+//   return arr;
+// }
 
 // const expected = myRemove([1, 2, 3, 4], 3);
 // assert.deepStrictEqual(expected, [1, 2, 3, 4], 'Erro: O array sofreu alteração');
@@ -104,6 +104,23 @@ passado por parâmetro sofreu alterações */
 // O array não sofreu alterações;
 
 //  14. Verifique se a chamada myRemoveWithoutCopy([1, 2, 3, 4], 5) retorna o array esperado;
-const expected = myRemoveWithoutCopy([1, 2, 3, 4], 5);
-assert.deepStrictEqual(expected, [1, 2, 3, 4], 'Erro: O array sofreu alterações');
+// const expected = myRemoveWithoutCopy([1, 2, 3, 4], 5);
+// assert.deepStrictEqual(expected, [1, 2, 3, 4], 'Erro: O array sofreu alterações');
 // Retoran o Array esperado;
+
+/* 15. A função myFizzBuzz(num) recebe um número num e retorna "fizzbuzz" se o número for
+divisível por 3 e 5 , retorna "fizz" se for divisível apenas por 3 , retorna "buzz" se divisível
+apenas por 5 , retorna o próprio número caso não seja divisível por 3 ou 5 e retorna false caso
+num não seja um número */
+
+function myFizzBuzz(num) {
+  if (typeof num !== 'number') return false;
+  if (num % 3 === 0 && num % 5 === 0) return 'fizzbuzz';
+  if (num % 3 === 0) return 'fizz';
+  if (num % 5 === 0) return 'buzz';
+  return num;
+}
+
+const expected = myFizzBuzz(3);
+assert.strictEqual(expected, 'fizz', 'Error: O retorno foi diferente de fizz');
+// retornou fizz OK.

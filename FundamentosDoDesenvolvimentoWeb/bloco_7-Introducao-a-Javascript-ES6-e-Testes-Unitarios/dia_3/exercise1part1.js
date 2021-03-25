@@ -113,13 +113,13 @@ divisível por 3 e 5 , retorna "fizz" se for divisível apenas por 3 , retorna "
 apenas por 5 , retorna o próprio número caso não seja divisível por 3 ou 5 e retorna false caso
 num não seja um número */
 
-function myFizzBuzz(num) {
-  if (typeof num !== 'number') return false;
-  if (num % 3 === 0 && num % 5 === 0) return 'fizzbuzz';
-  if (num % 3 === 0) return 'fizz';
-  if (num % 5 === 0) return 'buzz';
-  return num;
-}
+// function myFizzBuzz(num) {
+//   if (typeof num !== 'number') return false;
+//   if (num % 3 === 0 && num % 5 === 0) return 'fizzbuzz';
+//   if (num % 3 === 0) return 'fizz';
+//   if (num % 5 === 0) return 'buzz';
+//   return num;
+// }
 
 // const expected = myFizzBuzz(3);
 // assert.strictEqual(expected, 'fizz', 'Error: O retorno foi diferente de fizz');
@@ -147,6 +147,73 @@ function myFizzBuzz(num) {
 // retornou 16 OK.
 
 // 20. Faça uma chamada com um parâmetro que não é um número e verifique se o retorno é o esperado
-const expected = myFizzBuzz('16');
-assert.strictEqual(expected, false, 'Error: O retorno foi diferente de false');
+// const expected = myFizzBuzz('16');
+// assert.strictEqual(expected, false, 'Error: O retorno foi diferente de false');
 // retornou false OK.
+
+// 21. Compare dois objetos (JSON) para verificar se são idênticos ou não
+
+const obj1 = {
+  title: 'My Title',
+  description: 'My Description',
+};
+
+const obj2 = {
+  description: 'My Description',
+  title: 'My Title',
+};
+
+const obj3 = {
+  title: 'My Different Title',
+  description: 'My Description',
+};
+
+// Método consultado em: https://pt.stackoverflow.com/questions/291203/como-comparar-se-dois-objetos-javascript-s%C3%A3o-iguais#:~:text=Infelizmente%2C%20ao%20contr%C3%A1rio%20de%20algumas,distintos%20de%20operadores%20de%20igualdade.
+
+function isEquivalent(a, b) {
+  // Acredito que essa seja uma das qualidades do código.
+  // É realizada a verificação do que o objeto possui internamente, e isso
+  // é passado diretamente para a variável.
+  const aProps = Object.getOwnPropertyNames(a);
+  const bProps = Object.getOwnPropertyNames(b);
+  // Então, é feita a verificação se os dois objetos possuem o mesmo
+  // número de propriedades. Muito bom! E tira muito trabalho caso não
+  // tenham.
+  if (aProps.length !== bProps.length) {
+    return false;
+  }
+  // Caso tenham o mesmo número, é realizada uma iteração por todas as
+  // propriedades do objeto. Porém, como ressaltei antes, não busca por
+  // objetos dentro de objetos, podendo retornar uma inconsistência.
+  for (let i = 0; i < aProps.length; i += 1) {
+    const propName = aProps[i];
+    if (a[propName] !== b[propName]) {
+      return false;
+    }
+  }
+  return true;
+}
+
+// function compareObjects(firstObj, secondObj) {
+//   const newObject1Entries = Object.entries(firstObj);
+//   const newObject1EntriesSort = newObject1Entries.sort();
+//   const newObject2Entries = Object.entries(secondObj);
+//   const newObject2EntriesSort = newObject2Entries.sort();
+//   let numberOfEqualItems = 0;
+
+//   for (let index = 0; index < newObject1EntriesSort.length; index += 1) {
+//     const element = newObject1EntriesSort[index];
+//     const element2 = newObject2EntriesSort[index];
+//     if (element[index][0] === element2[index][0] && element[index][1] === element2[index][1]) {
+//       numberOfEqualItems += 1;
+//     }
+//   }
+//   if (numberOfEqualItems === firstObj.length) {
+//     return true;
+//   }
+//   return false;
+// }
+
+const expected = isEquivalent(obj1, obj3);
+assert.strictEqual(expected, true, 'Error: O retorno foi diferente de true');
+// retornou true OK.

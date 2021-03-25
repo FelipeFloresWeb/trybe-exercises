@@ -80,3 +80,31 @@ acordo com a sua posição no objeto. Por exemplo: */
 const getValue = (obj, posicao) => Object.keys(obj)[posicao];
 
 console.log(getValue(allLessons, 0));
+
+/* 8. Crie uma função que verifique se o par (chave / valor)
+existe na função. Essa função deve possuir três parâmetros,
+sendo eles: o objeto, o nome da chave e o valor da chave. Exemplo: */
+
+const checkPropertyofAnObject = (anObect, keyName, keyValue) => {
+  const newPropertyObject = anObect;
+  const keysOfObject = Object.keys(newPropertyObject);
+  const valuesOfObject = Object.values(newPropertyObject);
+  if (valuesOfObject.includes(keyValue) && keysOfObject.includes(keyName)) {
+    return `A propridade ${keyName} e o valor ${keyValue}, existe neste objeto`;
+  }
+  return `A propridade ${keyName} e o valor ${keyValue}, não existe neste objeto`;
+};
+
+console.log(checkPropertyofAnObject(lesson1, 'materia', 'Matemática'));
+
+// const checkPropertyofAnObject = (anObect, keyName, keyValue) => {
+//   const newPropertyObject = anObect;
+//   const entrieObject = Object.entries(newPropertyObject);
+//   for (const key in entrieObject) {
+//     if (entrieObject[key][0] === keyName && entrieObject[key][1] === keyValue) {
+//       return true;
+//     }
+//   }
+// };
+
+// console.log(checkPropertyofAnObject(lesson1, 'materia', 'Matemática'));

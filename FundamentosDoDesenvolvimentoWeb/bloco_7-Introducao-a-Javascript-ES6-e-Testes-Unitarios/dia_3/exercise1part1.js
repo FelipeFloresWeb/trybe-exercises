@@ -52,7 +52,11 @@ function myRemove(arr, item) {
 // Retornou o array esperado;
 
 // 7. Verifique se a chamada myRemove([1, 2, 3, 4], 3) não retorna o array [1, 2, 3, 4];
+// s
+// Retornou Erro: O numero 3 foi removido;
+
+// 8. Verifique se o array passado por parâmetro não sofreu alterações;
 
 const expected = myRemove([1, 2, 3, 4], 3);
-assert.notDeepStrictEqual(expected, [1, 2, 4], 'Erro: O numero 3 foi removido');
-// Retornou Erro: O numero 3 foi removido;
+assert.deepStrictEqual(expected, [1, 2, 3, 4], 'Erro: O array sofreu alteração');
+// Retornou: O array sofreu alteração;

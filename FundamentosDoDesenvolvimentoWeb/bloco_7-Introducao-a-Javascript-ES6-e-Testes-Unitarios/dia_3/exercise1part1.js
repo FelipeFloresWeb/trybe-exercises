@@ -142,6 +142,11 @@ function myFizzBuzz(num) {
 
 // 19. Faça uma chamada com um número que não é divisível por 3 ou 5 e verifique se o retorno é o
 // esperado:
-const expected = myFizzBuzz(16);
-assert.strictEqual(expected, 16, 'Error: O retorno foi diferente de 16');
+// const expected = myFizzBuzz(16);
+// assert.strictEqual(expected, 16, 'Error: O retorno foi diferente de 16');
 // retornou 16 OK.
+
+// 20. Faça uma chamada com um parâmetro que não é um número e verifique se o retorno é o esperado
+const expected = myFizzBuzz('16');
+assert.strictEqual(expected, false, 'Error: O retorno foi diferente de false');
+// retornou false OK.

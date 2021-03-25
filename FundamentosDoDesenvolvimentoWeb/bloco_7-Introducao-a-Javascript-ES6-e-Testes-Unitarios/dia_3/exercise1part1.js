@@ -35,6 +35,7 @@ realizar a chamada sum(4, "5") */
 
 /* 6. A função myRemove(arr, item) recebe um array arr e retorna uma
 cópia desse array sem o elemento item caso ele exista no array */
+// Verifique se a chamada myRemove([1, 2, 3, 4], 3) retorna o array esperado:
 
 function myRemove(arr, item) {
   let newArr = [];
@@ -46,5 +47,12 @@ function myRemove(arr, item) {
   return newArr;
 }
 
+// const expected = myRemove([1, 2, 3, 4], 3);
+// assert.deepStrictEqual(expected, [1, 2, 4], 'Erro: O numero 3 não foi removido');
+// Retornou o array esperado;
+
+// 7. Verifique se a chamada myRemove([1, 2, 3, 4], 3) não retorna o array [1, 2, 3, 4];
+
 const expected = myRemove([1, 2, 3, 4], 3);
-assert.deepStrictEqual(expected, [1, 2, 4], 'Erro: O numero 3 não foi removido');
+assert.notDeepStrictEqual(expected, [1, 2, 4], 'Erro: O numero 3 foi removido');
+// Retornou Erro: O numero 3 foi removido;

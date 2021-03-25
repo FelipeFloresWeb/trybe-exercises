@@ -86,7 +86,13 @@ function myRemoveWithoutCopy(arr, item) {
 // assert.deepStrictEqual(expected, [1, 2, 3, 4], 'Erro: O array sofreu alteração');
 
 /* 11. Verifique se a chamada myRemoveWithoutCopy([1, 2, 3, 4], 3) retorna o array esperado */
-const expected = myRemoveWithoutCopy([1, 2, 3, 4], 3);
-assert.deepStrictEqual(expected, [1, 2, 4], 'Erro: O item 3 não foi removido');
+// const expected = myRemoveWithoutCopy([1, 2, 3, 4], 3);
+// assert.deepStrictEqual(expected, [1, 2, 4], 'Erro: O item 3 não foi removido');
 // subustituido variavel 'i' por 'index' linha 76 Coluna 18;
 // retornou o array esperado;
+
+/* 12. Verifique se a chamada myRemoveWithoutCopy([1, 2, 3, 4], 3) não
+retorna o array [1, 2, 3, 4] */
+const expected = myRemoveWithoutCopy([1, 2, 3, 4], 3);
+assert.notDeepStrictEqual(expected, [1, 2, 3, 4], 'Erro: Retornou o Array [1, 2, 4]');
+// não retornou o array [1, 2, 3, 4];

@@ -28,22 +28,21 @@ variável result e, caso não esteja, altere o código para que ele passe nos te
 const removeVowels = (word) => {
   let results = '';
   let numberOfVogals = 0;
-  const characters = word.split('');
   if (typeof (word) !== 'string') {
-    throw new Error('enter only letters');
+    throw new Error('Enter only letters');
   }
-  for (let index = 0; index < characters.length; index += 1) {
+  for (let index = 0; index < word.length; index += 1) {
     if (
-      characters[index] === 'a'
-      || characters[index] === 'o'
-      || characters[index] === 'i'
-      || characters[index] === 'e'
-      || characters[index] === 'u'
+      word[index] === 'a'
+      || word[index] === 'o'
+      || word[index] === 'i'
+      || word[index] === 'e'
+      || word[index] === 'u'
     ) {
       numberOfVogals += 1;
       results += numberOfVogals;
     } else {
-      results += characters[index];
+      results += word[index];
     }
   }
   return results;

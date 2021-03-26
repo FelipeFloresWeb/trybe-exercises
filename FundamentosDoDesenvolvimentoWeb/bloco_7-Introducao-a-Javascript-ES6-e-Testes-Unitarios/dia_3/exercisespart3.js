@@ -85,7 +85,11 @@ na variável result e, caso não esteja, altere o código para que ele passe nos
 
 const secondThirdSmallest = (array) => {
   const results = [];
-
+  for (const iterator of array) {
+    if (typeof (iterator) !== 'number') {
+      throw new Error('Enter only numbers');
+    }
+  }
   array.sort((x, y) => x - y);
 
   results.push(array[1]);

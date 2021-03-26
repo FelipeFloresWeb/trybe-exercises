@@ -25,53 +25,56 @@ variável result e, caso não esteja, altere o código para que ele passe nos te
 // escreva testes para verificar se a mesma está retornando como se vê na
 // variável result e, caso não esteja, altere o código para que ele passe nos testes.
 
-const removeVowels = (word) => {
-  let results = '';
-  let numberOfVogals = 0;
-  if (typeof (word) !== 'string') {
-    throw new Error('Enter only letters');
-  }
-  for (let index = 0; index < word.length; index += 1) {
-    if (
-      word[index] === 'a'
-      || word[index] === 'o'
-      || word[index] === 'i'
-      || word[index] === 'e'
-      || word[index] === 'u'
-    ) {
-      numberOfVogals += 1;
-      results += numberOfVogals;
-    } else {
-      results += word[index];
-    }
-  }
-  return results;
-};
-
-const parameter = 'Dayane';
-const result = 'D1y2n3';
-
-const output = removeVowels(parameter);
-assert.strictEqual(typeof (removeVowels), 'function');
-assert.strictEqual(output, result, 'Error: The array has not correct changed');
-
-/* 3. Use a variável parameter como parâmetro da função abaixo,
-escreva testes para verificar se a mesma está retornando como se vê
-na variável result e, caso não esteja, altere o código para que ele passe nos testes. */
-
-// const greaterThanTen = (array) => {
-//   let results = 0;
-//   for (let index = 0; index < array.length; index += 1) {
-//     if (array[index] > 10) {
-//       results += array[index];
+// const removeVowels = (word) => {
+//   let results = '';
+//   let numberOfVogals = 0;
+//   if (typeof (word) !== 'string') {
+//     throw new Error('Enter only letters');
+//   }
+//   for (let index = 0; index < word.length; index += 1) {
+//     if (
+//       word[index] === 'a'
+//       || word[index] === 'o'
+//       || word[index] === 'i'
+//       || word[index] === 'e'
+//       || word[index] === 'u'
+//     ) {
+//       numberOfVogals += 1;
+//       results += numberOfVogals;
+//     } else {
+//       results += word[index];
 //     }
 //   }
 //   return results;
 // };
 
-// const parameter = [4, 10, 32, 9, 21];
-// const result = [32, 21];
+// const parameter = 'Dayane';
+// const result = 'D1y2n3';
 
 // const output = removeVowels(parameter);
 // assert.strictEqual(typeof (removeVowels), 'function');
 // assert.strictEqual(output, result, 'Error: The array has not correct changed');
+
+/* 3. Use a variável parameter como parâmetro da função abaixo,
+escreva testes para verificar se a mesma está retornando como se vê
+na variável result e, caso não esteja, altere o código para que ele passe nos testes. */
+
+const greaterThanTen = (array) => {
+  const results = [];
+  for (let index = 0; index < array.length; index += 1) {
+    if (typeof (array[index]) !== 'number') {
+      throw new Error('Enter only numbers');
+    }
+    if (array[index] > 10) {
+      results.push(array[index]);
+    }
+  }
+  return results;
+};
+
+const parameter = [4, 10, 32, 9, 21];
+const result = [32, 21];
+
+const output = greaterThanTen(parameter);
+assert.deepStrictEqual(typeof (greaterThanTen), 'function');
+assert.deepStrictEqual(output, result, 'Error: The array has not correct changed');

@@ -7,3 +7,5 @@
 // Crie uma função de primeira classe que tenha o retorno console.log('Acordando!!') ;
 
 const wakeUp = () => console.log('Acordando!!');
+
+const breakfast = () => console.log('Bora tomar café!!');

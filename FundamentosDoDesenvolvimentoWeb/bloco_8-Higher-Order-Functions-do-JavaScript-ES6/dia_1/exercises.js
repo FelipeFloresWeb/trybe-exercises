@@ -37,3 +37,15 @@ console.log(prizeDraw(generateAnNumber0to5));
 correta (Ex: Gabarito) para uma pergunta e uma resposta a ser validada (Ex: Resposta de uma
   pessoa). Sua HOF deve checar se a resposta enviada pela pessoa usuária é correta. Se for, a
   função retorna true , se não for, a função retorna false . */
+
+const correctAnswer = (answer) => {
+  let feedback = false;
+  if (answer === 'A') {
+    feedback = true;
+  }
+  return feedback;
+};
+
+const studentResponse = (gabarito) => console.log(`Sua resposta está: ${correctAnswer(gabarito)}`);
+
+studentResponse('A');

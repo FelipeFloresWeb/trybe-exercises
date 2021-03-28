@@ -49,3 +49,39 @@ const correctAnswer = (answer) => {
 const studentResponse = (gabarito) => console.log(`Sua resposta está: ${correctAnswer(gabarito)}`);
 
 studentResponse('A');
+
+/* 4. Crie uma HOF que receberá três parâmetros. O primeiro será um array de respostas
+corretas (Gabarito), o segundo será um array de respostas a serem checadas (Respostas da
+  pessoa estudante) e o terceiro é uma função que checa se a resposta está correta e faz a
+  contagem da pontuação final recebida pela pessoa estudante. Ao final a HOF deve retornar o
+  total da contagem de respostas certas.
+Quando a resposta for correta a contagem sobe 1 ponto, quando for incorreta desce 0.5 pontos, e
+quando não houver resposta ("N.A") não altera-se a contagem. */
+
+const rightAnswers = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const studentAnswers = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+const checkAnswers = (trueArray, otherArray) => {
+  let correctAnswers = 0;
+  let naAnswers = 0;
+
+  for (let index = 0; index < otherArray.length; index += 1) {
+    const element = otherArray[index];
+    if (element === trueArray[index]) {
+      correctAnswers += 1;
+    } if (element === 'N.A') {
+      naAnswers += 1;
+      console.log(naAnswers);
+    }
+  }
+  const wrongAnswers = trueArray.length - correctAnswers - naAnswers;
+  const result = correctAnswers - (wrongAnswers * 0.5);
+  return result;
+};
+
+const checkPoints = (correctArray, studentArray, action) => {
+  const points = action(correctArray, studentArray);
+  console.log(`A pontuação final deste candidato é ${points}`);
+};
+
+checkPoints(rightAnswers, studentAnswers, checkAnswers);

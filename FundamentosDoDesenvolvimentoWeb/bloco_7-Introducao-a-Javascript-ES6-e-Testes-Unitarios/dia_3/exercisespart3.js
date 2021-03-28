@@ -85,6 +85,7 @@ na variável result e, caso não esteja, altere o código para que ele passe nos
 
 const secondThirdSmallest = (array) => {
   const results = [];
+  // eslint-disable-next-line no-restricted-syntax
   for (const iterator of array) {
     if (typeof (iterator) !== 'number') {
       throw new Error('Enter only numbers');

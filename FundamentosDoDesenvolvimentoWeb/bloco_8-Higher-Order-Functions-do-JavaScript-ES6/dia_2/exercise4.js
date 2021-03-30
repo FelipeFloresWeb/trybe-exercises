@@ -109,9 +109,32 @@ const expectedResult = [
     releaseYear: 1928,
   },
 ];
+// const showReleaseYear = (obj) => {
+//   for (let index = 0; index < obj.length; index += 1) {
+//     console.log(books[index].releaseYear);
+//   }
+// };
+// showReleaseYear(books);
+// const getLowestName = (obj2) => {
+//   const novoarray = [];
+//   let lowestYear = 9999;
+//   for (let index = 0; index < obj2.length; index += 1) {
+//     novoarray.push(obj2[index]);
+//     if (obj2[index].releaseYear < lowestYear) {
 
-function booksOrderedByReleaseYearDesc(obj) {
-  
-}
+//       lowestYear = obj2[index].releaseYear;
+//     }
+//   }
+//   return novoarray;
+// };
+
+// const booksOrderedByReleaseYearDesc = (obj) => obj.releaseYear.sort((a, b) => b - a);
+
+// const lowestReleaseYear = getLowestName(obj);
+
+// console.log(lowestReleaseYear);
+// return lowestReleaseYear;
+
+const booksOrderedByReleaseYearDesc = (obj) => obj.sort((a, b) => b.releaseYear - a.releaseYear);
 
 assert.deepStrictEqual(booksOrderedByReleaseYearDesc(books), expectedResult);

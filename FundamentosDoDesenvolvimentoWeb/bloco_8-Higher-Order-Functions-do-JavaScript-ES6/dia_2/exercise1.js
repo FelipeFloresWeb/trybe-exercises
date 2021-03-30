@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-/* Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947.
+/* 1. Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947.
 Dica: use a função find. */
 
 const assert = require('assert');

@@ -76,8 +76,19 @@ const expectedResult = {
   releaseYear: 1991,
 };
 
-function getNamedBook() {
-  // escreva seu código aqui
+const have26Characters = (arr) => {
+  let book;
+  if (arr.name.length === 26) {
+    book = arr.name;
+  }
+  return book;
+};
+
+function getNamedBook(obj) {
+  const nameIs = obj.find(have26Characters);
+  return nameIs;
 }
 
-assert.deepStrictEqual(getNamedBook(), expectedResult);
+getNamedBook(books);
+
+assert.deepStrictEqual(getNamedBook(books), expectedResult);

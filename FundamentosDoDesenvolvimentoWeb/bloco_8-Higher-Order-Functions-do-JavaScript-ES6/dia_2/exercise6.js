@@ -1,5 +1,5 @@
-// 5. Faça uma função que retorne true , se todas as pessoas autoras nasceram no século XX,
-// ou false , caso contrário.
+// 6. Faça uma função que retorne true , se algum livro foi lançado na década de 80,
+// e false , caso contrário.
 
 const assert = require('assert');
 
@@ -66,11 +66,11 @@ const books = [
   },
 ];
 
-const expectedResult = false;
+const expectedResult = true;
 
-const everyoneWasBornOnSecXX = (obj) => Object.values(obj).every((param1) => {
-  const isTrue = param1.birthYear < 2000 && param1.birthYear > 1899;
+const someBookWasReleaseOnThe80s = (obj) => Object.values(obj).some((param1) => {
+  const isTrue = param1.releaseYear < 1990 && param1.releaseYear > 1979;
   return isTrue;
 });
 
-assert.strictEqual(everyoneWasBornOnSecXX(books), expectedResult);
+assert.strictEqual(someBookWasReleaseOnThe80s(books), expectedResult);

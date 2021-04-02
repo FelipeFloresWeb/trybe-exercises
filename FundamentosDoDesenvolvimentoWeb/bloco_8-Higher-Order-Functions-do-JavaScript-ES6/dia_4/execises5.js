@@ -2,7 +2,7 @@
 ou minúscula. */
 
 const assert = require('assert');
-const { rollbacks } = require('npm');
+// const { rollbacks } = require('npm');
 
 const names = [
   'Aanemarie', 'Adervandes', 'Akifusa',

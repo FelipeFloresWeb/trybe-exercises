@@ -9,7 +9,8 @@ const arrays = [
 ];
 
 function flatten() {
-  return arrays.reduce((acc, index) => `${acc},${index}`);
+  return arrays.reduce((acc, index) => acc.concat(index), []);
 }
 
+console.log(flatten());
 assert.deepStrictEqual(flatten(), ['1', '2', '3', true, 4, 5, 6]);

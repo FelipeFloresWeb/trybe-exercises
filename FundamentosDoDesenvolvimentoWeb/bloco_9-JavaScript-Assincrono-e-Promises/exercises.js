@@ -34,7 +34,8 @@
 
 /* 2. Agora, dado o código abaixo, qual a ordem de finalização de execução das linhas comentadas?
  */
-// const planetDistanceFromSun = ({ name, distanceFromSun: { value, measurementUnit } }) => `${name} is ${value} ${measurementUnit} apart from the Sun`;
+// const planetDistanceFromSun = ({ name, distanceFromSun: { value, measurementUnit } }) =>
+// `${name} is ${value} ${measurementUnit} apart from the Sun`;
 
 // const mars = {
 //   name: 'Mars',
@@ -78,4 +79,4 @@ const getPlanet = () => {
   console.log('Returned planet: ', mars);
 };
 
-getPlanet(); // imprime Marte depois de 4 segundos
+setTimeout(() => getPlanet(), 4000);

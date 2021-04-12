@@ -124,6 +124,7 @@ as operações abaixo sobre a pessoa retornada. */
 const assert = require('assert');
 
 const userNationality = ({ firstName, nationality }) => `${firstName} is ${nationality}`;
+
 const userFullName = ({ firstName, lastName, nationality }) => {
   setTimeout(() => console.log(userNationality({ firstName, nationality })),3000);
   return `Hello! My name is ${firstName} ${lastName}`;
@@ -147,21 +148,27 @@ assert.strictEqual(getUser(), "Ivan is Russian"); // complete a chamada da funç
 e imprime dados de uma pessoa qualquer depois de um certo tempo. Complete a função getUser
 de forma que ela receba um callback para que possa realizar as operações abaixo sobre a pessoa. */
 
-const userFullName = ({ firstName, lastName }) => `Hello! My name is ${firstName} ${lastName}`;
 const userNationality = ({ firstName, nationality }) => `${firstName} is ${nationality}`;
+const userFullName = ({ firstName, lastName, nationality }) => {
+  userNationality({ firstName, nationality });
+  return `Hello! My name is ${firstName} ${lastName}`;
+};
 
 const delay = (maxMilliseconds = 5000) => Math.floor(Math.random() * maxMilliseconds);
 
-const getUser = () => {
+const getUser = (callback) => {
   setTimeout(() => {
     const user = {
       firstName: "Ivan",
       lastName: "Ivanovich",
       nationality: "Russian",
     };
-    console.log(user);
+    const { firstName, lastName, nationality } = user;
+    console.log(callback({ firstName, lastName, nationality }));
   }, delay());
 };
+
+
 
 getUser(userFullName); // deve imprimir "Hello! My name is Ivan Ivanovich" depois de um certo tempo
 getUser(userNationality); // deve imprimir "Ivan is Russian" depois de um certo tempo

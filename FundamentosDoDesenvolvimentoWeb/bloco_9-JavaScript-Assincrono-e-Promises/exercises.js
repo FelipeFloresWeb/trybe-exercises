@@ -53,13 +53,13 @@ const venus = {
 };
 
 const jupiter = {
-  name: "Jupiter",
+  name: 'Jupiter',
   distanceFromSun: {
     value: 778500000,
-    measurementUnit: "kilometers",
+    measurementUnit: 'kilometers',
   },
 };
 
 console.log(planetDistanceFromSun(mars)); // A
-setTimeout(() => console.log(planetDistanceFromSun(venus)), 3000); // B
-setTimeout(() => console.log(planetDistanceFromSun(jupiter)), 2000); // C
+setTimeout(() => console.log(planetDistanceFromSun(venus)), 2000); // B
+setTimeout(() => console.log(planetDistanceFromSun(jupiter)), 3000); // C

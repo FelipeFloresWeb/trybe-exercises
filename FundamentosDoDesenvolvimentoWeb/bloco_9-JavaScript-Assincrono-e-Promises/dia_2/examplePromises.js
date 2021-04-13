@@ -31,39 +31,39 @@ const promise = new Promise((resolve, reject) => {
 Uma coisa que você irá reparar é que quando o programa é bem sucedido, seu output aparece normalmente. Já quando ele é mal sucedido, ele lança um error ! Essa é a principal diferença entre o resolve e o reject , exatamente o que queríamos demonstrar. Na próxima sessão vamos ver como tratar este erro.
 Repare também como usamos o return antes do reject para interromper a execução da função. Dessa forma o uso do else se torna desnecessário.
 Ok, entendemos como funciona as Promises , mas como elas são melhores que as callbacks para gerir o fluxo de execução? Vamos ver agora como gerir o fluxo assíncrono com mais 2 "superpoderes" das promises: .then() e .catch() !
-Gestores de fluxo
+
+Gestores de fluxo:
 Existem 2 principais ferramentas que podemos usar para gerir o fluxo assíncrono com promises: o .then() e o .catch() . Vamos começar falando sobre o .then() . Para isso , vamos refatorar nossa promise: */
 
 const promise = new Promise((resolve, reject) => {
   const number = Math.floor(Math.random() * 11);
-
-  if (number <= 5) {
-    return reject(console.log(`Que fracasso =( Nosso número foi ${number}`));
-  }
-  resolve(number);
+  (number <= 5)
+    ? reject(console.log(`Que fracasso =( Nosso número foi ${number}`))
+    : resolve(number)
 })
-.then(number => `Que sucesso =) nosso número foi ${number}`)
-.then(msg => console.log(msg));
-/*  */
+  .then(number => `Que sucesso =) nosso número foi ${number}`)
+  .then(msg => console.log(msg));
+
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+
 const promise = new Promise((resolve, reject) => {
-  const number = Math.floor(Math.random()* 11);
-
-  if (number <= 5) {
-    return reject(number);
-  }
-  resolve(number);
+  const number = Math.floor(Math.random() * 11);
+  (number <= 5) ? reject(number) : resolve(number)
 })
-.then(number => `Que sucesso =) nosso número foi ${number}`)
-.then(msg => console.log(msg))
-.catch(number => console.log(`Que fracasso =( Nosso número foi ${number}`));
+  .then(number => `Que sucesso =) nosso número foi ${number}`)
+  .then(msg => console.log(msg))
+  .catch(number => console.log(`Que fracasso =( Nosso número foi ${number}`));
+
 /* Se executarmos o código acima, vamos ver que o erro anterior desapareceu, pois agora ele foi tratado! Assim como o .then() recebe o retorno de resolve , o .catch() recebe o retorno do reject , que é passado para ele como argumento de sua função interna. Assim, quando a promise retorna um reject , pula todos os .then() e executa o primeiro .catch() que encontrar. E tem mais! O .catch() também "pega" qualquer erro que acontecer dentro de qualquer .then() anterior a ele. Por esse motivo é geralmente usado no final.
 E assim, nossa primeia promise está pronta!
 CONGRATULATIONS
 Mas como isso entra no nosso dia a dia ? Vamos utilizar promises para fazer requisições a uma API com uma das funções mais usadas pelas pessoas desenvolvedoras, o Fetch !
-Fetch API
-No dia anterior você viu superficialmente o que é e pra que serve a função fetch . Hoje você aprenderá a usá-la. A função fetch , como já visto, é responsável por enviar requisições a APIs . Porém, essa não é sua única responsabilidade. Ela também possui ferramentas para tratar os dados recebidos e devolvê-los, além de lidar com os erros.
+
+Fetch API:
+No dia anterior você viu superficialmente o que é e pra que serve a função fetch. Hoje você aprenderá a usá-la. A função fetch, como já visto, é responsável por enviar requisições a APIs. Porém, essa não é sua única responsabilidade. Ela também possui ferramentas para tratar os dados recebidos e devolvê-los, além de lidar com os erros.
 O retorno da chamada varia conforme a API utilizada, não só em conteúdo, mas também formato. Como nosso maior foco é JavaScript, lidaremos principalmente com respostas em formato JSON ou respostas que possam ser reformatadas para tal.
-Erros comuns
+
+Erros comuns:
 Vamos criar uma promise que faz um fetch apenas para um endpoint específico. Para isso, vamos usar como "endpoint" uma url que nos retorna elogios sobre Chuck Norris (elogios, porque ninguém faz piadas com Chuck Norris).
 Antes de irmos para o código, como vamos rodar nosso código direto no Node e não no browser, precisamos instalar o node-fetch . Execute o comando abaixo caso você ainda não tenha o package.json : */
 
@@ -112,7 +112,7 @@ function sendJokeToFriend(name) {
 
 sendJokeToFriend("Anna");
 /* Agora execute a função sendJokeToFriend e veja se você acertou. Como vemos, recebemos o seguinte log: Promise { <pending> } . Vamos ver o que acontece aqui. Como vimos, verifiedFetch é uma promise, logo, é assíncrono. Quando o javascript executa a função, ele manda ela para "área especial" e passa para próxima função que é o console. Como a promise ainda não voltou com o conteúdo de message , vemos que a promise ainda está no estado pending . Para visualizar ainda melhor, retire o fetch e execute um resolve que retorna qualquer valor, assim a promise terminará sua execução imediatamente. Antes de executar, pense: Agora que a promise resolve imediatamente, quando o console.log for executado a Promise estará em pending ou já terá um resultado ? Execute e veja a resposta.
-Como você viu, ela esta em pending, mesmo sendo resolvida imediatamente. Isso aconteceu pois, mesmo resolvendo na hora, a promise vai para sua área e sai da fila. Quando ela retorna, mesmo que de imediato, ela volta pro final da fila e o console.log está na frente, sendo executado primeiro. Para resolver esse problema existem 2 maneiras. A primeira é usar o fluxo da promise e colocar o console.log dentro do .then() . Essa solução e ótima, mas pode ficar dificil de se manter e ler a medida que o número de passos aumenta e a medida que cada passo fica mais complexo também, assim, surgiu a terceira evolução das promises, o async e o await !
+Como você viu, ela esta em pending, mesmo sendo resolvida imediatamente. Isso aconteceu pois, mesmo resolvendo na hora, a promise vai para sua área e sai da fila. Quando ela retorna, mesmo que de imediato, ela volta pro final da fila e o console.log está na frente, sendo executado primeiro. Para resolver esse problema existem 2 maneiras. A primeira é usar o fluxo da promise e colocar o console.log dentro do .then() . Essa solução e ótima, mas pode ficar dificil de se manter e ler a medida que o número de passos aumenta e a medida que cada passo fica mais complexo também, assim, surgiu a terceira evolução das promises, o async e o await!
 async e await
 O async é uma mão na roda. Essa funcionalidade transforma qualquer função em uma promise. Para começar a usá-la, basta colocar o async antes da definição da função. Agora é só transformar o que é resolve em return e o que é reject em throw e BOOM! Sua promise com async está pronta. Vamos refatorar a função verifiedFetch para usar async :
  */
@@ -136,7 +136,8 @@ function sendJokeToFriend(name) {
 
 sendJokeToFriend("Anna");
 /* Pronto! Perceba que continua funcionado exatamente da mesma forma que anteriormente. Tá achando que acabou? Ainda tem mais!
-Whoo
+
+Whoo:
 A funcionalidade async sozinha é fantástica mas não resolve nosso problema com a função sendJokeToFriend . Assim, junto com ela vem um bônus, o await . O await só pode ser usado dentro de uma função com async e ela faz exatamente o que diz, faz com o que a função espere uma resposta para continuar sua execução. Vamos refatorar sendJokeToFriend :
  */
 const fetch = require('node-fetch');

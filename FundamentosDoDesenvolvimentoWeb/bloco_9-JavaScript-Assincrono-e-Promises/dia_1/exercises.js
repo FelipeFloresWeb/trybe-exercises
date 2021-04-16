@@ -147,7 +147,7 @@ const greet = (temperature) => console.log(`Hi there! Curiosity here. Right now 
 
 const handleError = (errorReason) => console.log(`Error getting temperature: ${errorReason}`);
 
-const chance = () => Math.floor(Math.random() * 100) <= 60;
+const chance = () => Math.floor(Math.random() * 101) <= 60;
 
 // definição da função sendMarsTemperature...
 const sendMarsTemperature = (callback1, callback2) => {

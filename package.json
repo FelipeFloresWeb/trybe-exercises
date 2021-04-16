@@ -5,6 +5,25 @@
     "eslint-plugin-import": "^2.22.1"
   },
   "dependencies": {
+    "node-fetch": "^2.6.1",
     "npm": "^7.7.6"
-  }
+  },
+  "name": "trybe-exercises",
+  "description": "Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Felipe Flores](https://www.linkedin.com/in/felipe-flores-trybe)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeFloresWeb/trybe-exercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FelipeFloresWeb/trybe-exercises/issues"
+  },
+  "homepage": "https://github.com/FelipeFloresWeb/trybe-exercises#readme"
 }

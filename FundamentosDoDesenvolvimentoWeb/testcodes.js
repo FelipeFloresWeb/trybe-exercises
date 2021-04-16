@@ -17,12 +17,10 @@ narcissistic(1938);
 //   [...`${value}`].reduce((pre, val, _, arr) => pre + val ** arr.length, 0) === value;
 
 const isIsogram = (str) => {
-  (str === '') return true;
-  const toLowerCase = str.toLowerCase();
-  const strSplited = toLowerCase.split('');
-  const strCopy = toLowerCase.split('');
-  return strSplited.every((letter, index) => letter !== strCopy[index + 1]
-  && index < strCopy.length);
+  const toSee = str.toLowerCase().split('');
+  const copy = toSee;
+  console.log(toSee);
+  return console.log(toSee.every((letter, index) => letter !== copy[index + 1]));
 };
 
 isIsogram('isIsogram');

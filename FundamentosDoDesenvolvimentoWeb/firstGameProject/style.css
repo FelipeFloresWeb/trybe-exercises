@@ -22,6 +22,7 @@ body {
 .champion {
   color: chartreuse;
   padding: 10px;
+  font-size: 20px;
 }
 
 .selected {
@@ -61,4 +62,8 @@ p {
 .cardicon {
   max-width: 40px;
   max-height: 40px;
+}
+
+#cardText {
+  padding: 10px;
 }

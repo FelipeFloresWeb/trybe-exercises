@@ -1,14 +1,5 @@
 /* eslint-disable no-alert */
 /* eslint-disable import/extensions */
-// const earthData = require('./championsImgs');
-
-// const selectDivSubTitle = document.querySelector('#title');
-// selectDivSubTitle.addEventListener('mouseover', () => {
-//   selectDivSubTitle.style.backgroundColor = 'black';
-// });
-// selectDivSubTitle.addEventListener('mouseout', () => {
-//   selectDivSubTitle.style.removeProperty('background-color');
-// });
 
 import champions from './champions.js';
 
@@ -19,6 +10,21 @@ function fetchResponse() {
     .then((data) => data.json())
     .then((champion) => champion.data);
 }
+
+const generateHistoryChampion = (fighter) => `${fighter.name} "${fighter.title}".<br><br>${fighter.blurb}<br><br>
+  Pontos de Vida: ${fighter.stats.hp}<br>
+  Ataque Físico: ${fighter.stats.attackdamage}<br>
+  Velocidade de Ataque: ${fighter.stats.attackspeed}ms<br>
+  Defesa Física: ${fighter.stats.armor}<br>
+  Defesa Mágica: ${fighter.stats.spellblock}<br>
+  Distancia do Ataque: ${(fighter.stats.attackrange < 500)
+    ? fighter.stats.attackrange * 0.01
+    : fighter.stats.attackrange * 0.1}metros<br>
+    Defesa Física por nível: ${fighter.stats.armorperlevel} pontos<br>
+    Defesa Mágica por nível: ${fighter.stats.armorperlevel} pontos<br>
+    Pontos de vida por nível: ${fighter.stats.spellblock} pontos<br>
+    Classe: ${fighter.tags.toString().replace(',', ', ')}
+<a  class="link" target="_blank" href ="https://br.leagueoflegends.com/pt-br/champions/${(fighter.name).toString().toLowerCase().replace('. ', '-').replace('\'', '-')}/"><br><br>(clique aqui para mais informações..)</a>`;
 
 const showchamp = (fighter) => {
   const selectImages = document.querySelectorAll('.championscards');
@@ -43,20 +49,7 @@ const showchamp = (fighter) => {
   const createSpan = document.createElement('span');
   createSpan.id = 'cardText';
   createSpan.style.backgroundColor = 'black';
-  createSpan.innerHTML = `${fighter.name} "${fighter.title}".<br><br>${fighter.blurb}<br><br>
-  Pontos de Vida: ${fighter.stats.hp}<br>
-  Ataque Físico: ${fighter.stats.attackdamage}<br>
-  Velocidade de Ataque: ${fighter.stats.attackspeed}ms<br>
-  Defesa Física: ${fighter.stats.armor}<br>
-  Defesa Mágica: ${fighter.stats.spellblock}<br>
-  Distancia do Ataque: ${(fighter.stats.attackrange < 500)
-    ? fighter.stats.attackrange * 0.01
-    : fighter.stats.attackrange * 0.1}metros<br>
-    Defesa Física por nível: ${fighter.stats.armorperlevel} pontos<br>
-    Defesa Mágica por nível: ${fighter.stats.armorperlevel} pontos<br>
-    Pontos de vida por nível: ${fighter.stats.spellblock} pontos<br>
-    Classe: ${fighter.tags.toString().replace(',', ', ')}
-    <a  class="link" target="_blank" href ="https://br.leagueoflegends.com/pt-br/champions/${(fighter.name).toString().toLowerCase().replace('. ', '-').replace('\'', '-')}/"><br><br>(clique aqui para mais informações..)</a>`;
+  createSpan.innerHTML = generateHistoryChampion(fighter);
 
   selectDivChampCards.appendChild(createSpan);
 };
@@ -77,7 +70,7 @@ const showChampionsNames = (champions1) => {
     createSpan.innerHTML = champion.name;
     createSpan.classList.add('champion');
 
-    // Habilite/Desabilite as linhas 81 e 82 deste arquivo e as linhas 35 e 36 do arquivo css,
+    // Comente/Descomente as linhas 75 e 76 deste arquivo e as linhas 35 e 36 do arquivo css,
     // para adicionar/remover icones aos nomes dos campeões.
     createSpan.style.backgroundImage = `url(img/champion/tiles/${champion.image.full})`;
     createSpan.style.backgroundSize = '100%';
@@ -91,14 +84,6 @@ const showChampionsNames = (champions1) => {
     // selectDivChamps.appendChild(createImg);
   });
 };
-
-// const selectAllChamps = document.querySelectorAll('span, .champion');
-// selectAllChamps.addEventListener('mouseover', () => {
-//   selectAllChamps.style.backgroundColor = 'black';
-// });
-// selectAllChamps.addEventListener('mouseout', () => {
-//   selectAllChamps.style.removeProperty('background-color');
-// });
 
 window.onload = async function onload() {
   try {

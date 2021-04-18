@@ -22,8 +22,8 @@ body {
   color: chartreuse;
   padding: 10px;
   font-size: 20px;
-  /* border-radius: 100%; */
-  border: solid 1px chartreuse;
+  border-radius: 100%; 
+  border: solid 1px chartreuse; 
 }
 
 .selected {
@@ -38,10 +38,14 @@ body {
 .deSelected {
   background-color: none;
   transition: 1s;
+  position: absolute;
+  top: 50%;
 }
 
-p {
-  font-size: 22px;
+#description {
+  font-weight: 600;
+  font-size: 26px;
+  background-color: black;
 }
 
 #champs {

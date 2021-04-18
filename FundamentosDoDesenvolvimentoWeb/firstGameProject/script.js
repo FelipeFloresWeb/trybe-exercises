@@ -333,7 +333,7 @@ const showchamp = (fighter) => {
   const selectBody = document.body;
   selectBody.style.backgroundImage = champions[fighter.id];
   selectBody.style.backgroundSize = '100%';
-  selectBody.style.transition = '1.5s';
+  selectBody.style.transition = '1s';
 
   const selectDivChampCards = document.querySelector('#champCards');
   const createImg = document.createElement('img');
@@ -376,8 +376,8 @@ const showChampionsNames = (champions1) => {
     const createSpan = document.createElement('span');
     createSpan.innerHTML = champion.name;
     createSpan.classList.add('champion');
-    // createSpan.style.backgroundImage = `url(img/champion/tiles/${champion.image.full})`;
-    // createSpan.style.backgroundSize = '100%';
+    createSpan.style.backgroundImage = `url(img/champion/tiles/${champion.image.full})`;
+    createSpan.style.backgroundSize = '100%';
     createSpan.addEventListener('click', (event) => selectChamp(event, champion));
     selectDivChamps.appendChild(createSpan);
     // const createImg = document.createElement('img');
@@ -392,7 +392,6 @@ window.onload = async function onload() {
     const champions0 = await fetchResponse();
     const arrchampions = Object.values(champions0);
     showChampionsNames(arrchampions);
-    console.log(arrchampions);
   } catch (error) {
     alert(error);
   }

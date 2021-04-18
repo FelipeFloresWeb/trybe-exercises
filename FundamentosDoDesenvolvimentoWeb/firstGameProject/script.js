@@ -315,6 +315,14 @@ const championsCards = {
   Zyra: 'img/champion/loading/Zyra_0.jpg',
 };
 
+// const selectDivSubTitle = document.querySelector('#title');
+// selectDivSubTitle.addEventListener('mouseover', () => {
+//   selectDivSubTitle.style.backgroundColor = 'black';
+// });
+// selectDivSubTitle.addEventListener('mouseout', () => {
+//   selectDivSubTitle.style.removeProperty('background-color');
+// });
+
 function fetchResponse() {
   return fetch('http://ddragon.leagueoflegends.com/cdn/11.8.1/data/pt_BR/champion.json')
     .then((data) => data.json())
@@ -345,7 +353,7 @@ const showchamp = (fighter) => {
   createSpan.id = 'cardText';
   createSpan.style.backgroundColor = 'black';
   createSpan.innerHTML = `${fighter.name} "${fighter.title}".<br><br>${fighter.blurb}<br><br>
-  Ataque Pontos de Vida: ${fighter.stats.hp}<br>
+  Pontos de Vida: ${fighter.stats.hp}<br>
   Ataque Físico: ${fighter.stats.attackdamage}<br>
   Velocidade de Ataque: ${fighter.stats.attackspeed}ms<br>
   Defesa Física: ${fighter.stats.armor}<br>
@@ -356,7 +364,8 @@ const showchamp = (fighter) => {
     Defesa Física por nível: ${fighter.stats.armorperlevel} pontos<br>
     Defesa Mágica por nível: ${fighter.stats.armorperlevel} pontos<br>
     Pontos de vida por nível: ${fighter.stats.spellblock} pontos<br>
-    Classe: ${fighter.tags.toString().replace(',', ', ')}`;
+    Classe: ${fighter.tags.toString().replace(',', ', ')}
+    <a  class="link" target="_blank" href ="https://br.leagueoflegends.com/pt-br/champions/${(fighter.name).toString().toLowerCase().replace('. ', '-').replace('\'', '-')}/"><br><br>(clique aqui para mais informações..)</a>`;
 
   selectDivChampCards.appendChild(createSpan);
 };
@@ -376,10 +385,13 @@ const showChampionsNames = (champions1) => {
     const createSpan = document.createElement('span');
     createSpan.innerHTML = champion.name;
     createSpan.classList.add('champion');
+
     createSpan.style.backgroundImage = `url(img/champion/tiles/${champion.image.full})`;
     createSpan.style.backgroundSize = '100%';
+
     createSpan.addEventListener('click', (event) => selectChamp(event, champion));
     selectDivChamps.appendChild(createSpan);
+
     // const createImg = document.createElement('img');
     // createImg.classList.add('cardicon');
     // createImg.src = `img/champion/tiles/${champion.image.full}`;
@@ -387,11 +399,20 @@ const showChampionsNames = (champions1) => {
   });
 };
 
+// const selectAllChamps = document.querySelectorAll('span, .champion');
+// selectAllChamps.addEventListener('mouseover', () => {
+//   selectAllChamps.style.backgroundColor = 'black';
+// });
+// selectAllChamps.addEventListener('mouseout', () => {
+//   selectAllChamps.style.removeProperty('background-color');
+// });
+
 window.onload = async function onload() {
   try {
     const champions0 = await fetchResponse();
     const arrchampions = Object.values(champions0);
     showChampionsNames(arrchampions);
+    console.log(arrchampions);
   } catch (error) {
     alert(error);
   }

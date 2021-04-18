@@ -16,36 +16,49 @@ body {
   color: darkgoldenrod;
   font-size: 45px;
   padding: 0 20px;
+  -webkit-text-stroke-width: 1px; /* largura da borda */
+  -webkit-text-stroke-color: #000; /* cor da borda */
+}
+
+#title:hover {
+  background-color: black;
 }
 
 .champion {
   color: chartreuse;
   padding: 10px;
   font-size: 20px;
-  border-radius: 100%; 
-  border: solid 1px chartreuse; 
+  line-height: 30px;
+  font-weight: 700;
+  -webkit-text-stroke-width: 0.4px; /* largura da borda */
+  -webkit-text-stroke-color: rgb(0, 0, 0); /* cor da borda */
+  border-radius: 100%;
+  border: solid 2px chartreuse;
+}
+
+.champion:hover {
+  cursor: pointer;
 }
 
 .selected {
-  /* background-color: rgb(26, 192, 142); */
-  font-size: 500px;
-  transition: 1s;
+  font-size: 300px;
   padding: 10px;
   position: absolute;
-  top: 50%;
+  top: 40%;
+  transition: 1s;
+  padding: 200px;
 }
 
 .deSelected {
   background-color: none;
-  transition: 1s;
   position: absolute;
-  top: 50%;
+  top: 40%;
+  transition: 1s;
 }
 
 #description {
   font-weight: 600;
   font-size: 26px;
-  background-color: black;
 }
 
 #champs {
@@ -75,4 +88,9 @@ body {
 
 #cardText {
   padding: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }

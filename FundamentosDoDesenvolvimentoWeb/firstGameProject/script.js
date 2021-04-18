@@ -135,7 +135,7 @@ const champions = {
   Varus: 'url(img/champion/splash/Varus_0.jpg)',
   Vayne: 'url(img/champion/splash/Vayne_0.jpg)',
   Veigar: 'url(img/champion/splash/Veigar_0.jpg)',
-  VelKoz: 'url(img/champion/splash/VelKoz_0.jpg)',
+  Velkoz: 'url(img/champion/splash/Velkoz_0.jpg)',
   Vi: 'url(img/champion/splash/Vi_0.jpg)',
   Viego: 'url(img/champion/splash/Viego_0.jpg)',
   Viktor: 'url(img/champion/splash/Viktor_0.jpg)',
@@ -293,7 +293,7 @@ const championsCards = {
   Varus: 'img/champion/loading/Varus_0.jpg',
   Vayne: 'img/champion/loading/Vayne_0.jpg',
   Veigar: 'img/champion/loading/Veigar_0.jpg',
-  VelKoz: 'img/champion/loading/VelKoz_0.jpg',
+  Velkoz: 'img/champion/loading/Velkoz_0.jpg',
   Vi: 'img/champion/loading/Vi_0.jpg',
   Viego: 'img/champion/loading/Viego_0.jpg',
   Viktor: 'img/champion/loading/Viktor_0.jpg',
@@ -332,6 +332,7 @@ const showchamp = (fighter) => {
 
   const selectBody = document.body;
   selectBody.style.backgroundImage = champions[fighter.id];
+  selectBody.style.backgroundSize = '100%';
   selectBody.style.transition = '1.5s';
 
   const selectDivChampCards = document.querySelector('#champCards');

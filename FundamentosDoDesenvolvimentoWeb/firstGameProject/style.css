@@ -6,7 +6,7 @@
 
 body {
   background-image: url(https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt4c94b53fe630f489/5e718af13ed79e6484b31580/LOL_PROMOART_4.jpg);
-  background-size: 100%;
+  background-size: cover;
 }
 
 #title {
@@ -16,19 +16,23 @@ body {
   color: darkgoldenrod;
   font-size: 45px;
   padding: 0 20px;
-  /* background-color: black; */
 }
 
 .champion {
   color: chartreuse;
   padding: 10px;
   font-size: 20px;
+  /* border-radius: 100%; */
+  border: solid 1px chartreuse;
 }
 
 .selected {
-  background-color: rgb(26, 192, 142);
-  font-size: 35px;
+  /* background-color: rgb(26, 192, 142); */
+  font-size: 500px;
   transition: 1s;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
 }
 
 .deSelected {
@@ -45,6 +49,7 @@ p {
   flex-wrap: wrap;
   padding: 30px;
   line-height: 30px;
+  justify-content: space-around;
 }
 
 #champCards {

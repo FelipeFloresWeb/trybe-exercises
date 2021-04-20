@@ -2,6 +2,7 @@ const sum = require('../functions/sum');
 const myRemove = require('../functions/myRemove');
 const myRemoveWithoutCopy = require('../functions/myRemoveWithoutCopy');
 const myFizzBuzz = require('../functions/myFizzBuzz');
+const { obj1, obj2, obj3 } = require('../functions/jsonObj');
 
 /* 1. A função sum(a, b) retorna a soma do parâmetro a com o b */
 
@@ -110,4 +111,10 @@ describe('Função myFizzBuzz()', () => {
   test('Deve retornar false caso algum elemento do parametro seja diferente do tipo number', () => {
     expect(myFizzBuzz('7')).toBeFalsy();
   });
+});
+
+// Compare dois objetos (JSON) para verificar se são idênticos ou não
+
+test('Se dois elementos sao identicos deve retornar True', () => {
+  expect(obj1).toEqual(obj2);
 });

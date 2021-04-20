@@ -8,8 +8,8 @@ verificaFimPalavra('joaofernando', 'fernan') ;
 Retorno esperado: false */
 
 function checkLastLetters(word, letters) {
-  let index2 = word.length;
-  for (let index = letters.length; index >= 0; index -= 1) {
+  let index2 = word.length - 1;
+  for (let index = letters.length - 1; index >= 0; index -= 1) {
     if (letters[index] !== word[index2]) {
       return false;
     }
@@ -17,4 +17,4 @@ function checkLastLetters(word, letters) {
   }
   return true;
 }
-console.log(checkLastLetters('trybe', 'be'));
+console.log(checkLastLetters('joaofernando', 'fernan'));

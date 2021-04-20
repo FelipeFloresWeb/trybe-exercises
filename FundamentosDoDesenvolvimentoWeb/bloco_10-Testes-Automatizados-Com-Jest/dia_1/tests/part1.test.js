@@ -40,8 +40,8 @@ describe('Função myRemove()', () => {
   });
 
   // 2. Verifique se a chamada myRemove([1, 2, 3, 4], 3) não retorna o array [1, 2, 3, 4]
-  test('Verifique se a chamada myRemove([1, 2, 3, 4], 3) não retorna o array [1, 2, 3, 4]', () => {
-    expect(myRemove([1, 2, 3, 4], 3)).not.toContainEqual([1, 2, 3, 4]);
+  test('Verifica se a chamada myRemove ([1, 2, 3, 4], 3),', () => {
+    expect(myRemove(([1, 2, 3, 4], 3))).not.toEqual([1, 2, 3, 4]);
   });
 
   // 3. Verifique se o array passado por parâmetro não sofreu alterações
@@ -87,17 +87,17 @@ describe('Função myFizzBuzz()', () => {
   retorna false caso num não seja um número */
 
   // Faça uma chamada com um número divisível por 3 e 5 e verifique se o retorno é o esperado
-  test('Deve retornar fizzbuzz', () => {
+  test('Ao chamar a função com um número divisível por 3 e 5 deve retornar fizzbuzz', () => {
     expect(myFizzBuzz(15)).toMatch('fizzbuzz');
   });
 
   // Faça uma chamada com um número divisível por 3 e verifique se o retorno é o esperado
-  test('Deve retornar fizz', () => {
+  test('Ao chamar a função com um número divisível por 3 deve retornar fizz', () => {
     expect(myFizzBuzz(3)).toMatch('fizz');
   });
 
   // Faça uma chamada com um número divisível por 5 e verifique se o retorno é o esperado
-  test('Deve retornar buzz', () => {
+  test('Ao chamar a função com um número divisível por 5 deve retornar buzz', () => {
     expect(myFizzBuzz(5)).toMatch('buzz');
   });
 

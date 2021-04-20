@@ -1,6 +1,7 @@
 const { encode, decode } = require('../functions/encodeDecode');
 const techList = require('../functions/techList');
 const hydrate = require('../functions/hydrate');
+const mul = require('../functions/mul');
 
 describe('function encode()', () => {
   // 1. Teste se encode e decode são funções;
@@ -99,5 +100,11 @@ describe('Testa a função hydrate', () => {
     expect(hydrate('2 shots de tequila, 2 cervejas e 1 corote')).toBe('5 copos de água');
     expect(hydrate('1 copo de catuaba, 1 cervejas e 1 copo de vinho')).toBe('3 copos de água');
     expect(hydrate('4 caipirinhas e 2 cervejas')).toBe('6 copos de água');
+  });
+});
+
+describe('Testa a função mul', () => {
+  test('a função retorna 9', () => {
+    expect(mul(3, 3)).toEqual(9);
   });
 });

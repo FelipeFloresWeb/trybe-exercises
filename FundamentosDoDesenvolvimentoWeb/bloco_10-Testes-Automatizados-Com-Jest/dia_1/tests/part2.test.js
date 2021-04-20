@@ -1,4 +1,5 @@
 const { encode, decode } = require('../functions/encodeDecode');
+const techList = require('../functions/techList');
 
 describe('function encode()', () => {
   // 1. Teste se encode e decode são funções;
@@ -45,5 +46,41 @@ describe('function decode()', () => {
   que a string passada como parâmetro */
   test(`Verifica se ao passar letras/números não são convertidos para cada caso`, () => {
     expect(decode('67890')).toHaveLength(5);
+  });
+});
+
+describe('Testa a função techList', () => {
+  it('Testa se a função techList é definida', () => {
+    expect(techList).toBeDefined();
+  });
+  it('Testa se techList é uma função', () => {
+    expect(typeof techList).toBe('function');
+  });
+  it('Lista com 5 tecnologias deve retornar uma lista de objetos ordenados', () => {
+    expect(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas')).toEqual([
+      {
+        tech: 'CSS',
+        name: 'Lucas',
+      },
+      {
+        tech: 'HTML',
+        name: 'Lucas',
+      },
+      {
+        tech: 'JavaScript',
+        name: 'Lucas',
+      },
+      {
+        tech: 'Jest',
+        name: 'Lucas',
+      },
+      {
+        tech: 'React',
+        name: 'Lucas',
+      },
+    ]);
+  });
+  it('Lista com 0 tecnologias deve retornar uma mensagem de erro "Vazio!"', () => {
+    expect(techList([], 'Lucas')).toBe('Vazio!');
   });
 });

@@ -19,3 +19,21 @@ describe('Teste function getUserName()', () => {
     await expect(getUserName(4)).resolves.toEqual('Mark');
   });
 });
+
+/* Reescreva o teste do exercício anterior, desta vez utilizando a sintaxe de async/await .
+Dica: Utilize o try/catch para o caso de erro. */
+
+describe('Teste função getUserName(), com o método async/await', () => {
+  try {
+    test('verifica se a função getUserName existe', async () => {
+      expect (typeof getUserName).toBe('function');
+    });
+
+    test('Verifica que ao passar um ID válido retorna o nome da pessoa', async () => {
+      const name = await getUserName(4);
+      expect (name).toBe('Mark');
+    });
+  } catch (error) {
+    expect(error).toEqual({ error: 'User with ' + id + ' not found.' });
+  }
+});

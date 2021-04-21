@@ -20,7 +20,7 @@ describe('Teste function getUserName()', () => {
   });
 });
 
-/* Reescreva o teste do exercício anterior, desta vez utilizando a sintaxe de async/await .
+/* 3. Reescreva o teste do exercício anterior, desta vez utilizando a sintaxe de async/await .
 Dica: Utilize o try/catch para o caso de erro. */
 
 describe('Teste função getUserName(), com o método async/await', () => {

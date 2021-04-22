@@ -26,7 +26,8 @@ Dica: Utilize o try/catch para o caso de erro. */
 describe('Teste função getUserName(), com o método async/await', () => {
   try {
     test('verifica se a função getUserName existe', async () => {
-      expect (typeof getUserName).toBe('function');
+      const isFunction = await getUserName;
+      expect (typeof isFunction).toBe('function');
     });
 
     test('Verifica que ao passar um ID válido retorna o nome da pessoa', async () => {

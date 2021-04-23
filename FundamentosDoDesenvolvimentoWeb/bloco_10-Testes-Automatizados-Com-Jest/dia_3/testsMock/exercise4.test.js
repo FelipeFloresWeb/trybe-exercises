@@ -5,6 +5,10 @@ arquivo. Faça uma nova implementação para a primeira função, mas agora ela 
 a string em caixa baixa. Para a segunda função, uma nova implementação deve retornar a
 última letra de uma string. A terceira deve receber três strings e concatená-las. */
 
+/* 5. Utilizando as mesmas funções do exercício anterior, repita a implementação para
+a primeira função. Após repetir a implementação, restaure a implementação original e crie
+os testes necessários para validar. */
+
 const stringFunctions = require('../src/exercise4');
 
 jest.mock('../src/exercise4');

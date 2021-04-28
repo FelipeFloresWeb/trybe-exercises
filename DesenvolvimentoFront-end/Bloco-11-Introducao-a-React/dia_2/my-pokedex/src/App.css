@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pokemon {
+  background-color: rgb(201, 199, 199);
+  border-radius: 20px;
+  border: solid 1px black;
+  margin: 1% 4%;
+  padding: 3% 3% 0;
+  font-size: 20px;
+  box-sizing: content-box;
+  /* flex: 0 1 150px */
+  width: 18%;
+  transition: 0.3s;
+  animation: mymove 3s infinite;
+}
+
+.pokemon:active {
+  transform: scale(1.1);
+}
+
+@keyframes mymove {
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+.pokemon-img {
+  min-width: 110%;
+}

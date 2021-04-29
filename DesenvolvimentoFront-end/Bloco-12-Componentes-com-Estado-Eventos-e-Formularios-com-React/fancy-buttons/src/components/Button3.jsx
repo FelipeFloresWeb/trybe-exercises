@@ -1,21 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Button3 extends Component {
+class Button3 extends React.Component {
   constructor() {
     super()
-    this.createDiv = this.createDiv.bind(this);
+    this.state = {
+      numeroDeCliques: 0
+    }
   }
 
-  createDiv() {
-    return console.log('Parabéns!!! Voce conseguiu criar seu terceiro constructor');
+  handleClick = () => {
+    /* Passando uma callback à função setState, que recebe de parâmetros
+    o estado anterior e as props do componente, você garante que as atualizações
+    do estado acontecerão uma depois da outra! */
+    this.setState((estadoAnterior, _props) => ({
+      numeroDeCliques: estadoAnterior.numeroDeCliques + 1
+    }))
   }
 
   render() {
-    return (
-      <div>
-        <button onClick={this.createDiv}>Clique Aqui!</button>
-      </div>
-    );
+    return <button onClick={this.handleClick}>{this.state.numeroDeCliques}</button>
   }
 }
 

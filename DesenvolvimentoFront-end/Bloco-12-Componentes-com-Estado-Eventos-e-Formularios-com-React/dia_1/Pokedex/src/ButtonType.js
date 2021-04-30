@@ -10,8 +10,8 @@ class ButtonType extends Component {
 
   render() {
     return (
-      <button className="btn-types" onClick={this.typePokemon.bind(this)}>
-        {this.props.type || 'All'}
+      <button className="row-btn-types" onClick={this.typePokemon.bind(this)}>
+        {this.props.type || 'All' }
       </button>
     );
   }

@@ -1,68 +1,79 @@
-import React from 'react';
-import './PokedexCSS.css';
+import PropTypes from 'prop-types';
 import Pokemon from './Pokemon';
-import Button from './Button';
-import ButtonType from './ButtonType';
+import React from 'react';
+import data from './data';
+import './PokedexCSS.css'
 
 class Pokedex extends React.Component {
   constructor() {
-    super();
+    super()
+
+    this.types = ['All', ...new Set(data.map(pokemon => pokemon.type))].sort();
     this.state = {
-      index: 0,
-      pokemons: false,
+      pokemonsTypes: data,
+      position: 0,
     };
 
-    this.setIndex = this.setIndex.bind(this);
-    this.setPokemons = this.setPokemons.bind(this);
-    this.filterPokemons = this.filterPokemons.bind(this);
+    this.nextPokemon = this.nextPokemon.bind(this);
+    this.pokemonsByType = this.pokemonsByType.bind(this);
   }
 
-  setIndex(value) {
-    this.setState((ant, _props) => ({
-      index: value,
-    }));
+  nextPokemon() {
+    const { pokemonsTypes } = this.state;
+    this.setState((previousState, _props) => {
+      const { position } = previousState;
+      const indexAtual = position === pokemonsTypes.length - 1 ? 0 : position + 1;
+      return { ...previousState, position: indexAtual };
+    }
+    )
   }
 
-  setPokemons(value) {
-    this.setState((ant, _props) => ({
-      pokemons: value,
-    }));
-  }
-
-  filterPokemons() {
-    return this.props.pokemons.filter(
-      ({ type }) => type === this.state.pokemons || !this.state.pokemons,
-    );
-  }
+  pokemonsByType(event) {
+    const currentType = event.target.id;
+    const filtredsPokemons = data.filter((pokemon) => pokemon.type === currentType);
+    currentType !== 'All'
+    ? 
+    this.setState(() => ({
+      position: 0,
+      pokemonsTypes: filtredsPokemons,
+    }))
+    :
+    this.setState(() => ({
+      position: 0,
+      pokemonsTypes: data,
+  }))
+};
 
   render() {
-    const values = {
-      index: this.state.index,
-      statePokemon: this.state.pokemons,
-      pokemons: this.filterPokemons(),
-      setIndex: this.setIndex,
-      setPokemons: this.setPokemons,
-    };
-
-    const filterTypes = [...this.props.pokemons].map(({ type }) => type);
-    const listTypes = filterTypes.filter((elem, idx, arr) => arr.indexOf(elem) === idx);
-    const btnsType = listTypes.map((types, index) => <ButtonType key={index} values={values} type={types} />);
-
     return (
-      <div className="pokedex">
-        <Pokemon pokemon={values.pokemons[values.index]} />
-
-        <div className="row-btn-types">
-          <ButtonType values={values} type={false} />
-          {btnsType}
+      <>
+        <div className="h1Div">
+        <h1>POKEDEX</h1>
         </div>
-
+        <div className="App">
+          <Pokemon poke={this.state.pokemonsTypes[this.state.position]} />
+        </div>
+        <div className="buttonsTypes row-btn-types">
+          {this.types.map((tipo) => <button key={tipo} id={tipo} onClick={this.pokemonsByType}>{tipo}</button>)}
+        </div>
         <div className="row-btn-next">
-          <Button key='next'values={values} />
+          <button className="btn-next" onClick={this.nextPokemon}>Next Pokemon!</button>
         </div>
-      </div>
-    );
+      </>
+    )
   }
 }
+
+Pokedex.propTypes = {
+  pokemon: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+    averageWeight: PropTypes.shape({
+      value: PropTypes.number.isRequired,
+      measurementUnit: PropTypes.string.isRequired,
+    }).isRequired,
+    image: PropTypes.string.isRequired,
+  })).isRequired,
+};
 
 export default Pokedex;

@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(42, 162, 209);
+}
+
+h1 {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2em;
+  border-bottom: solid 1px white;
+  border-top: solid 1px white;
+  padding: 1% 0 1%;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dogsImage {
+  justify-content: center;
+  border: solid 1px black;
+  width: 40%;
+  margin: auto;
+  padding: 1%;
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+img {
+  max-width: 100%;
+}

@@ -44,7 +44,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-4: _JavaScript - Web Storage_
 - [x] 5-5: _[Projeto - Meme Generator](https://github.com/tryber/sd-010-a-project-meme-generator/pull/31)_
 - [x] 5-6: _[Projeto - Arte com Pixels](https://github.com/tryber/sd-010-a-project-pixels-art/pull/25)_
-_[Projeto - Arte com Pixels Online](https://felipefloresweb.github.io/pixelart/)_
+- [x] _[Projeto - Arte com Pixels Online](https://felipefloresweb.github.io/pixelart/)_
 - [x] 5-7: _[Projeto - Lista de tarefas]()_
 - [x] 5-7: _[Projeto - Adivinhe a Cor]()_
 - [x] 5-7: _[Projeto - Carta Misteriosa]()_

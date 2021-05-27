@@ -90,9 +90,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 11: Introdução - React
 
-- [ ] 11-1: _'Hello, world!' no React!_
-- [ ] 11-2: _Componentes React_
-- [ ] 11-3: _[Projeto - Movie Cards Library]()_
+- [x] 11-1: _'Hello, world!' no React!_
+- [x] 11-2: _Componentes React_
+- [x] 11-3: _[Projeto - Movie Cards Library]()_
 
 ##### Bloco 12: React
 
@@ -115,8 +115,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 15: Testes em React
 
 - [x] 15-1: _Testando React com a React Testing Library_
-- [ ] 15-2: _Testando React com a React Testing Library - Parte 2_
-- [ ] 15-3: _[Projeto - Testes em React]()_
+- [x] 15-2: _Testando React com a React Testing Library - Parte 2_
+- [x] 15-3: _[Projeto - Testes em React](https://github.com/tryber/sd-010-a-project-react-testing-library/pull/8)_
 
 ##### Bloco 16: IntroduÃ§Ã£o ao Redux
 

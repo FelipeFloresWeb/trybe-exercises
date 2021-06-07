@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import myReducer from './myReducer';
+import issPokemons from './myReducer';
 
 const rootReducer = combineReducers({
-  products: myReducer
+  issPokemons,
 });
 
 export default rootReducer;

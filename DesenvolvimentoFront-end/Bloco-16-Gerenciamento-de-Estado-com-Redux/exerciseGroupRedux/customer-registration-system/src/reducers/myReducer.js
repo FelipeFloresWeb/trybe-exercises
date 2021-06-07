@@ -1,22 +1,38 @@
-import ADD_PRODUCT from '../actions/index';
+import {
+  GET_POKEMONS, GET_POKEMONS_ERROR, GET_POKEMONS_SUCCESS,
+} from '../actions/index';
 
-const INITIAL_STATE = {
-  state: '',
-  cartProducts: [],
-  totalValue: 0,
+const INITIAL_ISS_POKEMONS = {
+  pokemons: [],
+  error: null,
+  isLoading: false,
 };
 
-function myReducer(state = INITIAL_STATE, action) {
+const issPokemons = (
+  state = INITIAL_ISS_POKEMONS,
+  action,
+) => {
   switch (action.type) {
-    case ADD_PRODUCT:
-      return {
-        ...state,
-        cartProducts: [...state.cartProducts, action.payload.product],
-        totalValue: state.totalValue + action.payload.product.price,
-      };
-    default:
-      return state;
+  case GET_POKEMONS:
+    return {
+      ...state,
+      isLoading: true,
+    };
+  case GET_POKEMONS_SUCCESS:
+    return {
+      ...state,
+      isLoading: false,
+      pokemons: action.payload.results,
+    };
+  case GET_POKEMONS_ERROR:
+    return {
+      ...state,
+      isLoading: false,
+      error: action.payload.error,
+    };
+  default:
+    return state;
   }
-}
+};
 
-export default myReducer;
+export default issPokemons;

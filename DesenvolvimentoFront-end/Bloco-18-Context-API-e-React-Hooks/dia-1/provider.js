@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MyOtherComponent from '../MyOtherComponent';
+import MyOtherComponent from './MyOtherComponent';
 import MyContext from './MyContext';
 
 class MyComponent extends Component {

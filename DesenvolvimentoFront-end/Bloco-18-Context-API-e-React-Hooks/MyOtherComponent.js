@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import MyContext from './dia-1/createContext';
 
-class MyOtherComponent extends Component {
-  render() {
+function MyOtherComponent() {
     return (
       <div>
         <MyContext.Consumer>
@@ -17,7 +16,6 @@ class MyOtherComponent extends Component {
         </MyContext.Consumer>
       </div>
     );
-  }
 }
 
 export default MyOtherComponent;

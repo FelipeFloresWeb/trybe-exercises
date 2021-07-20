@@ -1,8 +1,10 @@
 --Escreva uma query para exibir a string "This is SQL Exercise, Practice and Solution".
-
+Select 'This is SQL Exercise, Practice and Solution';
 
 --Escreva uma query para exibir três números em três colunas.
-
+Select 1 as 'Primeiro numero',
+2 as 'Segundo numero',
+3 as 'Segundo numero';
 
 --Escreva uma query para exibir a soma dos números 10 e 15.
 

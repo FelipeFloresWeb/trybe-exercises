@@ -101,3 +101,72 @@ SELECT * FROM sakila.rental;
 
 --# Query + LIMIT quantidade_de_resultados
 SELECT * FROM sakila.rental LIMIT 10;
+
+
+
+
+
+--LIMIT OFFSET - Pulando linhas desnecessárias
+--Para pular uma certa quantidade de linhas do seu resultado, você pode usar o comando OFFSET .
+
+--# Query + LIMIT quantidade_de_linhas OFFSET quantidade_de_linhas
+SELECT * FROM sakila.rental LIMIT 10 OFFSET 3;
+
+
+
+
+
+
+--Gerando resultados elegantes e organizados com o ORDER BY
+SELECT * FROM sakila.address
+ORDER BY district ASC, address DESC;
+
+--Ao usarmos o comando ORDER BY , podemos ordenar os resultados de forma alfabética ou numérica. Logo em seguida, informamos qual coluna iremos usar para ordenar os resultados. Podemos fazer de forma crescente (padrão do comando, porém pode ser usado o ASC ) ou de forma decrescente (usando o DESC ). Também é possível ordenar por mais de uma coluna. Assim, caso haja valores repetidos na primeira, a tabela será ordenada pelos valores da segunda, e assim por diante.
+
+
+
+-----------------------------------------------------------------------------
+--Para os exercícios a seguir, vamos usar a tabela sakila.film
+--Escreva uma query que exiba todos os filmes cadastrados no banco de dados.
+use sakila;
+SELECT * FROM film;
+
+
+--Escreva uma query que exiba apenas o nome dos filmes, seu ano de lançamento e sua classificação .
+use sakila;
+SELECT title, release_year, rating FROM film;
+
+--Quantos filmes temos cadastrados?
+use sakila;
+SELECT count(*) FROM film;
+
+
+--Para os exercícios a seguir, vamos usar a tabela sakila.actor
+--Escreva uma query que exiba apenas os sobrenomes únicos cadastrados.
+use sakila;
+SELECT distinct last_name FROM actor;
+
+--Quantos sobrenomes únicos temos na tabela?
+use sakila;
+SELECT distinct COUNT(last_name) FROM actor;
+--200
+
+--Ordene os valores na tabela em ordem crescente de sobrenomes e em ordem decrescente de nome.
+use sakila;
+SELECT last_name, first_name FROM actor
+ORDER BY last_name ASC, first_name DESC;
+
+
+--Vá até a tabela language do sakila e crie uma pesquisa que mostre os 5 idiomas cadastrados , mas não mostre o idioma english .
+use sakila;
+SELECT name FROM language
+where name != 'English';
+
+--Vá até a tabela film e selecione todos os dados da tabela. Pronto, fez isso?
+use sakila;
+SELECT * FROM film;
+
+--Agora vamos tentar fazer o seguinte: Crie uma query para encontrar os 20 primeiros filmes , incluindo o título , o ano de lançamento , a duração , a classificação indicativa e o custo de substituição . Ordene os resultados pelos filmes com a maior duração e depois pelo menor custo de substituição
+
+use sakila;
+SELECT title, release_year, rental_duration, special_features, replacement_cost FROM film limit 20;

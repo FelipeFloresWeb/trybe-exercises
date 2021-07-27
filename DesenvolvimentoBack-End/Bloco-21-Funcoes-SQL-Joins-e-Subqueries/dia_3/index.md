@@ -1,0 +1,3 @@
+# O que vamos aprender?
+## Primeiramente, parabéns pelo progresso, estamos chegando no final do nosso segundo bloco de sql \o/!
+## No conteúdo de hoje, vamos conhecer STORED PROCEDURES e STORED FUNCTIONS , ferramentas que nos ajudarão a criar blocos de código reutilizáveis dentro do banco de dados. Também vamos falar sobre TRIGGERS , que nos permitirá construir blocos de código que podem ser disparados automaticamente de acordo com alguma ação (inserção, atualização, remoção).

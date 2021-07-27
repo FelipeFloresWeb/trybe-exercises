@@ -144,7 +144,7 @@ WHERE
         AND t1.title <> t2.title;
 
 --Exercício 12: Faça duas buscas, uma utilizando SUBQUERY e outra utilizando INNER JOIN , que retornem o título dos filmes que arrecadaram 500 milhões ou mais, e que possuem duração maior que 110 minutos.
-SELECT 
+SELECT
     m.title
 FROM
     Pixar.Movies AS m
@@ -155,4 +155,16 @@ WHERE
             Pixar.BoxOffice AS b
         WHERE
             b.international_sales >= 500000000)
+        AND m.length_minutes > 110;
+
+--Usando INNER JOIN
+
+SELECT 
+    m.title
+FROM
+    Pixar.Movies m
+        INNER JOIN
+    BoxOffice b ON b.movie_id = m.id
+WHERE
+    b.international_sales >= 500000000
         AND m.length_minutes > 110;

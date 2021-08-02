@@ -77,15 +77,13 @@ FROM sakila.address
 WHERE MATCH(postal_code) AGAINST('36693');
 
 --Desafios sobre ALTER TABLE
---Restaure o banco de dados HR abaixo antes de continuar, caso não o tenha restaurado em alguma lição anterior:
---O banco de dados usado como base para os próximos exercícios pode ser restaurado através deste arquivo SQL.
---Baixe o conteúdo do arquivo .sql linkado acima;
---Copie todo o código SQL;
---Abra o MySQL Workbench e abra uma nova janela de query;
---Cole o SQL para dentro dessa janela;
---Selecione todo o código usando CTRL + A;
---Execute-o teclando CTRL + ENTER.
---Desafios:
---Escreva uma query SQL para alterar na tabela localtions o nome da coluna street_address para address , mantendo o mesmo tipo e tamanho de dados.
---Escreva uma query SQL para alterar o nome da coluna region_name para region , mantendo o mesmo tipo e tamanho de dados.
---Escreva uma query SQL para alterar o nome da coluna country_name para country , mantendo o mesmo tipo e tamanho de dados.
+
+--Escreva uma query SQL para alterar na tabela locations o nome da coluna street_address para address , mantendo o mesmo tipo e tamanho de dados.
+
+ALTER TABLE locations CHANGE street_address address varchar(40);
+
+--Escreva uma query SQL para alterar o nome da coluna region_name para region, mantendo o mesmo tipo e tamanho de dados.
+ALTER TABLE regions CHANGE REGION_NAME REGION varchar(25);
+
+--Escreva uma query SQL para alterar o nome da coluna country_name para country, mantendo o mesmo tipo e tamanho de dados.
+ALTER TABLE countries CHANGE COUNTRY_NAME COUNTRY varchar(40);

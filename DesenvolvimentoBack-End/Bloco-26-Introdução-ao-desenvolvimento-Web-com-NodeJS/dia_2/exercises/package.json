@@ -1,0 +1,16 @@
+{
+  "name": "exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exerciseOne.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "exercise1": "node exerciseOne.js",
+    "exercise2": "node exerciseTwo.js",
+    "exercise3": "node exerciseThree.js",
+    "exercise4": "node exerciseFour.js",
+    "exercise5": "node exerciseFive.js"
+  },
+  "author": "Felipe Flores",
+  "license": "ISC"
+}

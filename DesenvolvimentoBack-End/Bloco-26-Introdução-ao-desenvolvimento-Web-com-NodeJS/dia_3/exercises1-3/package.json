@@ -4,7 +4,7 @@
   "description": "",
   "main": "exercises.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node getNumberType.js",
     "test": "mocha tests.js"
   },
   "keywords": [],

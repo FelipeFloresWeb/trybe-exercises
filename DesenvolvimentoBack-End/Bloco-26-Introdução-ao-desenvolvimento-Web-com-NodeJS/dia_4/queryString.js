@@ -74,7 +74,35 @@ http :3001/recipes/search name==Macarrão maxPrice==40
     }
 ]
 /* Para Fixar
-1.Modifique o código da nossa rota para que ela receba um terceiro parâmetro através de query string com o atributo minPrice e modifique o filter para trazer apenas os receitas onde o valor da receita seja maior ou igual ao o valor enviado como parâmetro, mantendo os filtros anteriores.
+1.Modifique o código da nossa rota para que ela receba um terceiro parâmetro através de query string com o atributo minPrice e modifique o filter para trazer apenas as receitas onde o valor da receita seja maior ou igual ao o valor enviado como parâmetro, mantendo os filtros anteriores.
+/*/
 
-2.Implemente uma rota /drinks/search que permita pesquisar pelo atributo name usando query string.
+// ...
+
+app.get('/prices/search', function (req, res) {
+    const { name, minPrice, maxPrice } = req.query;
+    const filteredRecipes = recipes.filter((r) => r.name.includes(name)
+      && r.price < parseInt(maxPrice)
+      && r.price >= parseInt(minPrice));
+    res.status(200).json(filteredRecipes);
+})
+
+// ...
+
+
+// 2.Implemente uma rota /drinks/search que permita pesquisar pelo atributo name usando query string.
+
+
+
+// ...
+
+app.get('/drinks/search', function (req, res) {
+  const { name } = req.query;
+  const filteredDrinks = recipes.filter((r) => r.name.includes(name));
+  res.status(200).json(filteredDrinks);
+})
+
+// ...
+
+/*
 Nosso próximo passo é entender como conseguir receber informações uma forma segura quando precisamos persistir informações, ou seja, quando precisarmos salvar dados do lado do back-end. Não será usado query string e sim o body da requisição. */

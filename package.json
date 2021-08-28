@@ -6,6 +6,9 @@
     "jest": "^26.6.3"
   },
   "dependencies": {
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.1.1",
+    "express-rescue": "^1.1.31",
     "node-fetch": "^2.6.1",
     "npm": "^7.7.6"
   },

@@ -1,0 +1,26 @@
+{
+  "name": "exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exercises.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev1": "nodemon exercise1To4.js",
+    "dev2": "nodemon exercise5To8.js",
+    "exercises1to4": "node exercise1To4.js",
+    "exercises5to8": "node exercise5To8.js",
+    "exercisebonus": "node exerciseBonus.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "express-rescue": "^1.1.31"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

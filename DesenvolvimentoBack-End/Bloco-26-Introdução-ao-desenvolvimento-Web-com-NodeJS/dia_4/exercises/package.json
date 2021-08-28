@@ -8,7 +8,8 @@
     "dev1": "nodemon exercise1To4.js",
     "dev2": "nodemon exercise5To8.js",
     "exercises1to4": "node exercise1To4.js",
-    "exercises5to8": "node exercise5To8.js"
+    "exercises5to8": "node exercise5To8.js",
+    "exercisebonus": "node exerciseBonus.js"
   },
   "keywords": [],
   "author": "",

@@ -5,7 +5,10 @@
   "main": "exercises.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "exercise1": "node atividade1"
+    "exercise1": "node atividade1",
+    "exercise2": "node atividade2",
+    "exercise3": "node atividade3",
+    "exercise4": "node atividade4"
   },
   "keywords": [],
   "author": "Felipe Flores",

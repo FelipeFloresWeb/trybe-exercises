@@ -1,0 +1,23 @@
+{
+  "name": "exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exercises.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "exercise1": "node atividade1",
+    "exercise2": "node atividade2",
+    "exercise3": "node atividade3",
+    "exercise4": "node atividade4"
+  },
+  "keywords": [],
+  "author": "Felipe Flores",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-rescue": "^1.1.31"
+  }
+}

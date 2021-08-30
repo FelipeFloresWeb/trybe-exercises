@@ -52,3 +52,23 @@ app.put('/recipes/:id', validateName, (req, res) => {
 // ...
 /* Pronto. Agora o middleware que valida se o nome foi enviado foi isolado para uma função e conseguimos aplicá-la nas rotas para cadastrar e editar uma receita.
 Para ficar nítido, todo middleware, pode receber o next como um terceiro parâmetro, mas geralmente no caso do último middleware de uma rota, que processa a resposta da requisição caso todos os middlewares anteriores não tenham encerrado o fluxo, não temos necessidade de usar o objeto next por isso podemos simplesmente receber apenas os objetos req e res. */
+
+/* Para Fixar
+Crie uma função validatePrice para validar o preço foi enviado. O preço deve ser obrigatório, ser um número e não pode ser menor que 0. Aplique essa função como um middleware nas rotas POST /recipes e PUT /recipes/:id. */
+
+const validatePrice = (price) => {
+  if (price < 0) return false;
+  return true;
+};
+
+app.post('/recipes', validatePrice, (req, res) => {
+  const { price } = req.body;
+  if (!validatePrice(price)) return res.status(404).json({ message: 'Data Error' });
+  return res.status(201).json({ message: 'Price OK!' });
+});
+
+app.put('/recipes/:id', validatePrice, (req, res) => {
+  const { price } = req.body;
+  if (!validatePrice(price)) return res.status(404).json({ message: 'Data Error' });
+  return res.status(201).json({ message: 'Price OK!' });
+});

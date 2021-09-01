@@ -170,33 +170,38 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 23-1: _MongoDB - Introdução_
 - [x] 23-2: _Filter Operators_
-- [x] 23-3: _[Projeto - Data Flights](https://github.com/tryber/sd-010-a-mongodb-dataflights/pull/30)_
+- [x] 23-3: _[Projeto - Data Flights](https://github.com/tryber/sd-010-a-mongodb-dataflights/pull/30)_ - ([Requisitos](https://github.com/tryber/sd-010-a-mongodb-dataflights#requisitos-do-projeto))_
 
 ##### Bloco 24: Updates
 
 - [x] 24-1: _Updates Simples_
 - [x] 24-2: _Updates Complexos - Arrays - Parte 1_
 - [x] 24-3: _Updates Complexos - Arrays - Parte 2_
-- [x] 24-4: _[Projeto - Commerce]()_
+- [x] 24-4: _[Projeto - Commerce](https://github.com/tryber/sd-010-a-mongodb-commerce/pull/57)_ - ([Requisitos](https://github.com/tryber/sd-010-a-mongodb-commerce#requisitos-do-projeto))_
 
 ##### Bloco 25: Aggregation Framework
 
 - [x] 25-1: _Aggregation Framework - Part 1_
 - [x] 25-2: _Aggregation Framework - Part 2_
-- [x] 25-3: _[Projeto - Aggregations]()_
+- [x] 25-3: _[Projeto - Aggregations](https://github.com/tryber/sd-010-a-mongodb-aggregations/pull/67)_ - ([Requisitos](https://github.com/tryber/sd-010-a-mongodb-aggregations#requisitos-do-projeto))_
+
 
 ##### Bloco 26: Intro - NodeJS
 
 - [x] 26-1: _NodeJS - Introdução_
 - [x] 26-2: _NodeJS - Fluxo Assíncrono_
-- [x] 26-3: _NodeJS - Arquitetura_
-- [x] 26-4: _[Projeto - A CLI of Ice and Fire]()_
+- [x] 26-3: Testes com NodeJS
+- [ ] 26-4: Express: HTTP com Node.js
+- [ ] 26-5: Express: Middlewares
+- [x] 26-6: _[Projeto - Talk Manager](https://github.com/tryber/sd-010-a-project-talker-manager/pull/76)_ - ([Requisitos](https://github.com/tryber/sd-010-a-project-talker-manager#requisitos-do-projeto))_
 
 ##### Bloco 27: NodeJS
 
-- [ ] 27-1: _Express: HTTP com Node.js_
-- [ ] 27-2: _Arquitetura de Software - IntroduÃ§Ã£o ao MVC_
-- [ ] 27-3: _[Projeto - Cookmaster]()_
+- [ ] 27-1: Arquitetura de Software - Camada de Model
+- [ ] 27-2: Arquitetura de Software - Camada de Controller e Service
+- [ ] 27-3: Arquitetura Web - Rest e Restful
+- [ ] 27-4: Arquitetura de Software - Testando as Camadas
+- [ ] 27-3: _[Projeto - Store Manager]()_
 
 ##### Bloco 28: NodeJS
 

@@ -71,7 +71,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
 - [x] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
 - [x] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
-- [x] 8-5: _[Projeto - Zoo functions](https://github.com/tryber/sd-010-a-project-zoo-functions/pull/53)_
+- [x] 8-5: _[Projeto - Zoo functions](https://github.com/tryber/sd-010-a-project-zoo-functions/pull/53) - ([Requisitos](https://github.com/tryber/sd-010-a-project-zoo-functions#requisitos-do-projeto))_
 
 ##### Bloco 9: Assincronicidade & Callbacks
 
@@ -84,7 +84,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 10-1: _Primeiros passos no Jest_
 - [x] 10-2: _Jest - Testes Assíncrono_
 - [x] 10-3: _Jest - Simulando comportamentos_
-- [x] 10-4: _[Projeto - Jest Assíncrono e Mocking]()_
+- [x] 10-4: _[Projeto - Jest Assíncrono e Mocking](https://github.com/tryber/sd-010-a-project-jest/pull/19)_ - ([Requisitos](https://github.com/tryber/sd-010-a-project-jest#requisitos-do-projeto))_
 
 ## Desenvolvimento Front-end ✔️
 
@@ -92,7 +92,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 11-1: _'Hello, world!' no React!_
 - [x] 11-2: _Componentes React_
-- [x] 11-3: _[Projeto - Movie Cards Library](https://github.com/tryber/sd-010-a-project-jest/pull/19)_
+- [x] 11-3: _[Projeto - Movie Cards Library](https://github.com/tryber/sd-010-a-project-movie-cards-library/pull/10)_ - ([Requisitos](https://github.com/tryber/sd-010-a-project-movie-cards-library#requisitos-do-projeto))_
 
 ##### Bloco 12: React
 

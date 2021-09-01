@@ -6,7 +6,7 @@ _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vi
 
 O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
-## Fundamentos doDesenvolvimento Web :white_check_mark:
+## Fundamentos doDesenvolvimento Web ✔️
 
 ##### Bloco 1: Introdução - Unix & Shell
 
@@ -45,9 +45,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-5: _[Projeto - Meme Generator](https://github.com/tryber/sd-010-a-project-meme-generator/pull/31)_
 - [x] 5-6: _[Projeto - Arte com Pixels](https://github.com/tryber/sd-010-a-project-pixels-art/pull/25)_
 - [x] _[Projeto - Arte com Pixels Online](https://felipefloresweb.github.io/pixelart/)_
-- [x] 5-7: _[Projeto - Lista de tarefas]()_
-- [x] 5-7: _[Projeto - Adivinhe a Cor]()_
-- [x] 5-7: _[Projeto - Carta Misteriosa]()_
+- [x] 5-7: _[Projeto - Lista de tarefas](https://github.com/tryber/sd-010-a-project-todo-list/pull/27)_
+- [x] 5-7: _[Projeto - Adivinhe a Cor](https://github.com/tryber/sd-010-a-project-color-guess/pull/23)_
+- [x] 5-7: _[Projeto - Carta Misteriosa](https://github.com/tryber/sd-010-a-project-mistery-letter/pull/18)_
 
 ##### Bloco 6: HTML & CSS avançado
 
@@ -56,14 +56,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 6-3: _CSS Flexbox - Part 1_
 - [x] 6-4: _CSS Flexbox - Part 2_
 - [x] 6-5: _CSS Responsivo - Mobile First_
-- [x] 6-6: _[Projeto - PÃ¡gina inicial do Facebook]()_
+- [x] 6-6: _[Projeto - Pagina inicial do Facebook](https://github.com/tryber/sd-010-a-project-facebook-signup/pull/24)_
 
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
 - [x] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [x] 7-2: _JavaScript ES6 - Objects_
 - [x] 7-3: _Testes unitários em JavaScript_
-- [x] 7-4: _[Projeto - JavaScript Testes Unitários]()_
+- [x] 7-4: _[Projeto - JavaScript Testes Unitários](https://github.com/tryber/sd-010-a-project-js-unit-tests/pull/45)_
 
 ##### Bloco 8: JavaScript ES6
 
@@ -71,13 +71,13 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
 - [x] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
 - [x] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
-- [x] 8-5: _[Projeto - Zoo functions]()_
+- [x] 8-5: _[Projeto - Zoo functions](https://github.com/tryber/sd-010-a-project-zoo-functions/pull/53)_
 
 ##### Bloco 9: Assincronicidade & Callbacks
 
 - [x] 9-1: _JavaScript Assíncrono e Callbacks_
 - [x] 9-2: _JavaScript Promises_
-- [x] 9-3: _[Projeto - Carrinho de Compras]()_
+- [x] 9-3: _[Projeto - Carrinho de Compras](https://github.com/tryber/sd-010-a-project-shopping-cart/pull/28)_
 
 ##### Bloco 10: Jest
 
@@ -86,31 +86,31 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 10-3: _Jest - Simulando comportamentos_
 - [x] 10-4: _[Projeto - Jest Assíncrono e Mocking]()_
 
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+## Desenvolvimento Front-end ✔️
 
 ##### Bloco 11: Introdução - React
 
 - [x] 11-1: _'Hello, world!' no React!_
 - [x] 11-2: _Componentes React_
-- [x] 11-3: _[Projeto - Movie Cards Library]()_
+- [x] 11-3: _[Projeto - Movie Cards Library](https://github.com/tryber/sd-010-a-project-jest/pull/19)_
 
 ##### Bloco 12: React
 
 - [x] 12-1: _Components com estado_
 - [x] 12-2: _Eventos e formulários no React_
-- [x] 12-3: _[Projeto - Movie Cards Library Stateful]()_
+- [x] 12-3: _[Projeto - Movie Cards Library Stateful](https://github.com/tryber/sd-010-a-project-movie-cards-library-stateful/pull/16)_
 
 ##### Bloco 13: React
 
 - [x] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
 - [x] 13-2: _Ciclo de vida de componentes em React_
 - [x] 13-3: _React Router_
-- [x] 13-4: _[Projeto - Movie Cards Library CRUD]()_
+- [x] 13-4: _[Projeto - Movie Cards Library CRUD](https://github.com/tryber/sd-010-a-project-movie-card-library-crud/pull/23)_
 
 ##### Bloco 14: Metodologias Ágeis
 
-- [x] 14-1: _Metodologias Ágeis_
-- [x] 14-2: _[Projeto - Frontend Online Store]()_
+- [x] 14-1: _Metodologias Ágeis_(Projeto em Grupo)
+- [x] 14-2: _[Projeto - Frontend Online Store](https://github.com/tryber/sd-010-a-project-frontend-online-store/pull/371)_
 
 ##### Bloco 15: Testes em React
 
@@ -118,79 +118,79 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 15-2: _Testando React com a React Testing Library - Parte 2_
 - [x] 15-3: _[Projeto - Testes em React](https://github.com/tryber/sd-010-a-project-react-testing-library/pull/8)_
 
-##### Bloco 16: IntroduÃ§Ã£o ao Redux
+##### Bloco 16: Introduçãoo ao Redux
 
-- [ ] 16-1: _Introdução ao Redux_
-- [ ] 16-2: _React com Redux - Parte 1_
-- [ ] 16-3: _React com Redux - PrÃ¡tica_
-- [ ] 16-4: _React com Redux - Parte 2_
-- [ ] 16-5: _Testes síncronos com React-Redux_
-- [ ] 16-6: _[Projeto - Tabela com filtros de dados]()_
+- [x] 16-1: _Introdução ao Redux_
+- [x] 16-2: _React com Redux - Parte 1_
+- [x] 16-3: _React com Redux - PrÃ¡tica_
+- [x] 16-4: _React com Redux - Parte 2_
+- [x] 16-5: _Testes síncronos com React-Redux_
+- [x] 16-6: _[Projeto - Trybe Wallet - Tabela com filtros de dados](https://github.com/tryber/sd-010-a-project-trybewallet/pull/15)_
 
 ##### Bloco 17: Projeto React
 
-- [ ] 17-1: _[Projeto - Jogo de Trivia]()_
+- [x] 17-1: _[Projeto - Jogo de Trivia - Em Grupo](https://github.com/tryber/sd-010-a-project-trivia-react-redux/pull/12)_
 
 ##### Bloco 18: React & Context API
 
-- [ ] 18-1: _Context API do React_
-- [ ] 18-2: _React Hooks - useState e useContext_
-- [ ] 18-3: _React Hooks - useEffect e Hooks customizados_
-- [ ] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [x] 18-1: _Context API do React_
+- [x] 18-2: _React Hooks - useState e useContext_
+- [x] 18-3: _React Hooks - useEffect e Hooks customizados_
+- [x] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks](https://github.com/tryber/sd-010-a-project-starwars-planets-search/pull/8)_
 
 ##### Bloco 19: Projeto Final de Front-end
 
-- [ ] 19-1: _[Projeto - App de Receitas]()_
+- [x] 19-1: _[Projeto - App de Receitas - Projeto Final en Grupo](https://github.com/tryber/sd-010-a-project-recipes-app/pull/1004)_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
 ##### Bloco 20: Introdução - Bancos de dados relacionais
 
-- [ ] 20-1: _Banco de dados SQL_
-- [ ] 20-2: _Encontrando dados em um banco de dados_
-- [ ] 20-3: _Filtrando dados de forma específica_
-- [ ] 20-4: _Manipulando tabelas_
-- [ ] 20-5: _[Projeto - All For One]()_
+- [x] 20-1: _Banco de dados SQL_
+- [x] 20-2: _Encontrando dados em um banco de dados_
+- [x] 20-3: _Filtrando dados de forma específica_
+- [x] 20-4: _Manipulando tabelas_
+- [x] 20-5: _[Projeto - All For One](https://github.com/tryber/sd-010-a-mysql-all-for-one/pull/92)_
 
 ##### Bloco 21: Bancos de dados relacionais
 
-- [ ] 21-1: _FunÃ§Ãµes mais usadas no SQL_
-- [ ] 21-2: _Descomplicando JOINs e UNIONs_
-- [ ] 21-3: _Stored Routines & Subqueries_
-- [ ] 21-4: _[Projeto - Vocabulary Booster]()_
+- [x] 21-1: _FunÃ§Ãµes mais usadas no SQL_
+- [x] 21-2: _Descomplicando JOINs e UNIONs_
+- [x] 21-3: _Stored Routines & Subqueries_
+- [x] 21-4: _[Projeto - Vocabulary Booster](https://github.com/tryber/sd-010-a-mysql-vocabulary-booster/pull/90)_
 
 ##### Bloco 22: Bancos de dados relacionais
 
-- [ ] 22-1: _Transformando ideias em um modelo de banco de dados_
-- [ ] 22-2: _Normalização, Formas Normais e Dumps_
-- [ ] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
-- [ ] 22-3: _[Projeto - One For All]()_
+- [x] 22-1: _Transformando ideias em um modelo de banco de dados_
+- [x] 22-2: _Normalização, Formas Normais e Dumps_
+- [x] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
+- [x] 22-3: _[Projeto - One For All](https://github.com/tryber/sd-010-a-mysql-one-for-all/pull/53)_
 
 ##### Bloco 23: Introdução - NoSQL
 
-- [ ] 23-1: _MongoDB - IntroduÃ§Ã£o_
-- [ ] 23-2: _Filter Operators_
-- [ ] 23-3: _[Projeto - Data Flights]()_
+- [x] 23-1: _MongoDB - Introdução_
+- [x] 23-2: _Filter Operators_
+- [x] 23-3: _[Projeto - Data Flights](https://github.com/tryber/sd-010-a-mongodb-dataflights/pull/30)_
 
 ##### Bloco 24: Updates
 
-- [ ] 24-1: _Updates Simples_
-- [ ] 24-2: _Updates Complexos - Arrays - Parte 1_
-- [ ] 24-3: _Updates Complexos - Arrays - Parte 2_
-- [ ] 24-4: _[Projeto - Commerce]()_
+- [x] 24-1: _Updates Simples_
+- [x] 24-2: _Updates Complexos - Arrays - Parte 1_
+- [x] 24-3: _Updates Complexos - Arrays - Parte 2_
+- [x] 24-4: _[Projeto - Commerce]()_
 
 ##### Bloco 25: Aggregation Framework
 
-- [ ] 25-1: _Aggregation Framework - Part 1_
-- [ ] 25-2: _Aggregation Framework - Part 2_
-- [ ] 25-3: _[Projeto - Aggregations]()_
+- [x] 25-1: _Aggregation Framework - Part 1_
+- [x] 25-2: _Aggregation Framework - Part 2_
+- [x] 25-3: _[Projeto - Aggregations]()_
 
 ##### Bloco 26: Intro - NodeJS
 
-- [ ] 26-1: _NodeJS - Introdução_
-- [ ] 26-2: _NodeJS - Fluxo Assíncrono_
-- [ ] 26-3: _NodeJS - Arquitetura_
-- [ ] 26-4: _[Projeto - A CLI of Ice and Fire]()_
+- [x] 26-1: _NodeJS - Introdução_
+- [x] 26-2: _NodeJS - Fluxo Assíncrono_
+- [x] 26-3: _NodeJS - Arquitetura_
+- [x] 26-4: _[Projeto - A CLI of Ice and Fire]()_
 
 ##### Bloco 27: NodeJS
 

@@ -1,3 +1,4 @@
+const { ObjectId } = require('mongodb');
 const connection = require('./connection');
 
 // function formatUser(document) {
@@ -33,6 +34,35 @@ function getAllUsers() {
     .then((results) => results.map((item) => item));
 }
 
+const findById = async (id) => {
+  const userData = await connection()
+    .then((db) => db.collection('users').findOne(ObjectId(id)));
+
+  if (!userData) return null;
+
+  // const { firstName, lastName } = userData;
+
+  return userData;
+};
+
+const userUpdate = async (id, firstName, lastName, email, password) => {
+  const userData = await connection()
+    .then((db) => db.collection('users')
+      .updateOne({ _id: ObjectId(id) },
+        {
+          $set: {
+            firstName,
+            lastName,
+            email,
+            password,
+          },
+        }));
+
+  if (!userData) return null;
+
+  return userData;
+};
+
 function create(firstName, lastName, email, password) {
   return connection().then((db) => db
     .collection('users')
@@ -48,4 +78,6 @@ module.exports = {
   isValid,
   create,
   getAllUsers,
+  findById,
+  userUpdate,
 };

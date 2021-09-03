@@ -29,4 +29,35 @@ app.post('/user', async (req, res) => {
   return res.status(201).json(newUser);
 });
 
+app.get('/user/:id', async (req, res) => {
+  const { id } = req.params;
+  const author = await User.findById(id);
+
+  if (!author) {
+    return res.status(404).json({
+      error: true,
+      message: 'Usuário não encontrado',
+    });
+  }
+
+  return res.status(200).json(author);
+});
+
+app.put('/user/:id', async (req, res) => {
+  const {
+    firstName, lastName, email, password,
+  } = req.body;
+  const { id } = req.params;
+  const author = await User.userUpdate(id, firstName, lastName, email, password);
+
+  if (!author) {
+    return res.status(404).json({
+      error: true,
+      message: 'Usuário não encontrado',
+    });
+  }
+
+  return res.status(200).json(author);
+});
+
 app.listen(port, () => console.log('Example app listening on port 3000'));

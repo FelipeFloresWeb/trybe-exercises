@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* As camadas de Controller e Service
 Hoje, você vai aprender duas camadas novas, que podem ser (e geralmente são) utilizadas de forma complementar à camada de Model.
 Vamos falar sobre as camadas de Controllers e de Services .

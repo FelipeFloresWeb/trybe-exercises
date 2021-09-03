@@ -1,8 +1,6 @@
 const { ObjectId } = require('mongodb');
 const connection = require('./connection');
 
-
-
 const getAll = async () => connection()
   .then((db) => db.collection('authors').find().toArray())
   .then((authors) => authors.map(({

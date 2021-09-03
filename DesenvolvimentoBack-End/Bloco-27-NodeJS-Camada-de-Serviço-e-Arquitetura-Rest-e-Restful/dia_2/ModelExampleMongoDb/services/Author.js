@@ -28,7 +28,7 @@ const getAll = async () => {
 const findById = async (id) => {
   const author = await Author.findById(id);
 
-  return (getNewAuthor(author));
+  return getNewAuthor(author);
 };
 
 const create = async (firstName, middlename, lastName) => {
@@ -36,8 +36,13 @@ const create = async (firstName, middlename, lastName) => {
 
   if (!authorValid) return false;
 
-  await Author.create(firstName, middlename, lastName);
-  return true;
+  const { insertedId } = await Author.create(firstName, middlename, lastName);
+  return getNewAuthor({
+    id: insertedId,
+    firstName,
+    middlename,
+    lastName,
+  });
 };
 
 module.exports = {

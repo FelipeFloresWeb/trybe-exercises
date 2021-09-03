@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-const Author = require('./services/Author');
+const Author = require('./controllers/Author');
 
 app.use(bodyParser.json());
 

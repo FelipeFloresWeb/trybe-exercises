@@ -14,6 +14,17 @@ const getAll = async () => {
   }));
 };
 
+const getByID = async (id) => {
+  const moviesCollection = await connection()
+    .then((db) => db.collection('movies'));
+
+  const movie = await moviesCollection
+    .find((m) => m.id === id)
+    .toArray();
+
+  return movie
+};
+
 const create = async ({ title, directedBy, releaseYear }) => {
   const moviesCollection = await connection()
     .then((db) => db.collection('movies'));
@@ -29,4 +40,5 @@ const create = async ({ title, directedBy, releaseYear }) => {
 module.exports = {
   create,
   getAll,
+  getByID,
 };

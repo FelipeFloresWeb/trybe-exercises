@@ -22,10 +22,10 @@ const getAll = async () => {
 };
 
 const getByID = async (id) => {
-  const moviesData = await MoviesModel
+  const movieData = await MoviesModel
   .getByID(id);
 
-  return moviesData.map(getNewMovie);
+  return movieData;
 };
 
 const create = async ({ title, directedBy, releaseYear }) => {

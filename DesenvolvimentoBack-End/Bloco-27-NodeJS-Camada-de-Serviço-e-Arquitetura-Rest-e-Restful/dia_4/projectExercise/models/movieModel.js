@@ -1,4 +1,5 @@
 const connection = require('./connection');
+const { ObjectId } = require('mongodb');
 
 const getAll = async () => {
   const moviesCollection = await connection()
@@ -19,8 +20,7 @@ const getByID = async (id) => {
     .then((db) => db.collection('movies'));
 
   const movie = await moviesCollection
-    .find((m) => m.id === id)
-    .toArray();
+    .findOne({ _id: ObjectId(id) })
 
   return movie
 };

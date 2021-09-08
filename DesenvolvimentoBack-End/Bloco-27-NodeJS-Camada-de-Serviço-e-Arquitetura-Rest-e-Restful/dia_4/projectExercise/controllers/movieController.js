@@ -9,12 +9,12 @@ const getAll = async (_req, res) => {
 
 const getByID = async (req, res) => {
   const { id } = req.params;
-  const movies = await MovieService
+  const movie = await MovieService
     .getByID(id);
 
-  if (!movies) return res.status(404).json({ mensagem: 'Filme não encontrado.' });
+  if (!movie) return res.status(404).send('Filme não encontrado.');
 
-  res.status(200).json(movies);
+  res.status(200).json(movie);
 };
 
 const create = async (req, res) => {

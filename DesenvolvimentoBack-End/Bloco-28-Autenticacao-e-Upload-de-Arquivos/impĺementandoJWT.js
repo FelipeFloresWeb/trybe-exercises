@@ -129,7 +129,7 @@ module.exports = async (req, res, next) => {
     return res.status(401).json({ message: err.message });
   }
 };
-No arquivo api/server.js , onde definimos as rotas, usamos esse middleware para adicionar autenticação na nossa rota de listagem de posts.
+/* No arquivo api/server.js , onde definimos as rotas, usamos esse middleware para adicionar autenticação na nossa rota de listagem de posts. */
 
 // const express = require('express');
 // const bodyParser = require('body-parser');
@@ -195,8 +195,8 @@ module.exports = (req, res, next) => {
 };
 // Você deverá ver algo assim, no terminal onde executou a API:
 
-{
+/* {
   _id: 5ea2255783d4bc61173cd1e6,
   username: 'italssodj',
   password: 'senha123'
-}
+} */

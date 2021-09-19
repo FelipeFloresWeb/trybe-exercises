@@ -1,7 +1,7 @@
 {
-  "name": "hello-jwt",
+  "name": "io-multer",
   "version": "0.0.1",
-  "description": "aplicando o uso do Jason Web Token",
+  "description": "aprendendo na pratica o uso do Jason Web Token",
   "main": "index.js",
   "scripts": {
     "test": "jest",

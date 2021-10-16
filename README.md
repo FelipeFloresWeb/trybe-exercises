@@ -145,13 +145,13 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
 #### Bloco 19: Introdução à SQL
-[x] 19.1: Introdução - Back-end
-[x] 19.1: Introdução - Bancos de dados relacionais
-[x] 19.1: Banco de dados SQL
-[x] 19.2: Encontrando dados em um banco de dados
-[x] 19.3: Filtrando dados de forma específica
-[x] 19.4: Manipulando tabelas
-[x] 19.5: _[Projeto - All For One](https://github.com/tryber/sd-010-a-mysql-all-for-one/pull/92)_
+- [x] 19.1: Introdução - Back-end
+- [x] 19.1: Introdução - Bancos de dados relacionais
+- [x] 19.1: Banco de dados SQL
+- [x] 19.2: Encontrando dados em um banco de dados
+- [x] 19.3: Filtrando dados de forma específica
+- [x] 19.4: Manipulando tabelas
+- [x] 19.5: _[Projeto - All For One](https://github.com/tryber/sd-010-a-mysql-all-for-one/pull/92)_
 
 ##### Bloco 20: Funções SQL, Joins e Subqueries
 

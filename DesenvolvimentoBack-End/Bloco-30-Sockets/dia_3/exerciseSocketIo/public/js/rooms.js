@@ -1,9 +1,7 @@
-const io = window.io();
+const socket = window.io();
 
 const { username, room } = Qs.parse(location.search, {
   ignoreQueryPrefix: true});
-
-socket.emit('joinRoom', { username, room });
 
 const createMessage = (message) => {
   const messagesUl = document.querySelector('#messages');

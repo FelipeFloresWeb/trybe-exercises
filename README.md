@@ -84,7 +84,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 10-1: _Primeiros passos no Jest_
 - [x] 10-2: _Jest - Testes Assíncrono_
 - [x] 10-3: _Jest - Simulando comportamentos_
-- [x] 10-4: _[Projeto - Jest Assíncrono e Mocking](https://github.com/tryber/sd-010-a-project-jest/pull/19)_ - ([Requisitos](https://github.com/tryber/sd-010-a-project-jest#requisitos-do-projeto))_
+- [x] 10-4: _[Projeto - Jest Assíncrono e Mocking](https://github.com/tryber/sd-010-a-project-jest/pull/19)_ - ([Requisitos](https://github.com/tryber/sd-010-a-project-jest#requisitos-do-projeto))
 
 ## Desenvolvimento Front-end ✔️
 
@@ -92,7 +92,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 11-1: _'Hello, world!' no React!_
 - [x] 11-2: _Componentes React_
-- [x] 11-3: _[Projeto - Movie Cards Library](https://github.com/tryber/sd-010-a-project-movie-cards-library/pull/10)_ - ([Requisitos](https://github.com/tryber/sd-010-a-project-movie-cards-library#requisitos-do-projeto))_
+- [x] 11-3: _[Projeto - Movie Cards Library](https://github.com/tryber/sd-010-a-project-movie-cards-library/pull/10)_ - ([Requisitos](https://github.com/tryber/sd-010-a-project-movie-cards-library#requisitos-do-projeto))
 
 ##### Bloco 12: React
 
@@ -129,18 +129,18 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 17: Projeto React
 
-- [x] 17-1: _[Projeto - Jogo de Trivia - Em Grupo](https://github.com/tryber/sd-010-a-project-trivia-react-redux/pull/12)_
+- [x] 17-1: _[Projeto - Jogo de Trivia - Em Grupo](https://github.com/tryber/sd-010-a-project-trivia-react-redux/pull/12)
 
 ##### Bloco 18: React & Context API
 
 - [x] 18-1: _Context API do React_
 - [x] 18-2: _React Hooks - useState e useContext_
 - [x] 18-3: _React Hooks - useEffect e Hooks customizados_
-- [x] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks](https://github.com/tryber/sd-010-a-project-starwars-planets-search/pull/8)_
+- [x] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks](https://github.com/tryber/sd-010-a-project-starwars-planets-search/pull/8)
 
 ##### Bloco 19: Projeto Final de Front-end
 
-- [x] 19-1: _[Projeto - App de Receitas - Projeto Final en Grupo](https://github.com/tryber/sd-010-a-project-recipes-app/pull/1004)_
+- [x] 19-1: _[Projeto - App de Receitas - Projeto Final en Grupo](https://github.com/tryber/sd-010-a-project-recipes-app/pull/1004)
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
@@ -151,41 +151,41 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 19.2: Encontrando dados em um banco de dados
 - [x] 19.3: Filtrando dados de forma específica
 - [x] 19.4: Manipulando tabelas
-- [x] 19.5: _[Projeto - All For One](https://github.com/tryber/sd-010-a-mysql-all-for-one/pull/92)_
+- [x] 19.5: _[Projeto - All For One](https://github.com/tryber/sd-010-a-mysql-all-for-one/pull/92)
 
 ##### Bloco 20: Funções SQL, Joins e Subqueries
 
 - [x] 20-1: Funções mais usadas no SQL
 - [x] 20-2: Descomplicando JOINs, UNIONs e Subqueries
 - [x] 20-3: Stored Routines & Stored Functions
-- [x] 20-4:_[Projeto - Vocabulary Booster](https://github.com/tryber/sd-010-a-mysql-vocabulary-booster/pull/90)_
+- [x] 20-4:_[Projeto - Vocabulary Booster](https://github.com/tryber/sd-010-a-mysql-vocabulary-booster/pull/90)
 
 ##### Bloco 21: Normalização e Modelagem de Banco de Dados
 
 - [x] 21-1: Transformando ideias em um modelo de banco de dados - Parte 1
 - [x] 21-2: Normalização, Formas Normais e Dumps
 - [x] 21-3: Transformando ideias em um modelo de banco de dados - Parte 2
-- [x] 21-4: _[Projeto - One For All](https://github.com/tryber/sd-010-a-mysql-one-for-all/pull/53)_
+- [x] 21-4: _[Projeto - One For All](https://github.com/tryber/sd-010-a-mysql-one-for-all/pull/53)
 
 ##### Bloco 22: Introdução ao MongoDB
 
 - [x] 22-1: Introdução - NoSQL
 - [x] 22-2: MongoDB - Introdução
 - [x] 22-2: Filter Operators
-- [x] 22-3: _[Projeto - Data Flights](https://github.com/tryber/sd-010-a-mongodb-dataflights/pull/30)_ - ([Requisitos](https://github.com/tryber/sd-010-a-mongodb-dataflights#requisitos-do-projeto))_
+- [x] 22-3: _[Projeto - Data Flights](https://github.com/tryber/sd-010-a-mongodb-dataflights/pull/30)_ - ([Requisitos](https://github.com/tryber/sd-010-a-mongodb-dataflights#requisitos-do-projeto))
 
 ##### Bloco 23: MongoDB: Updates Simples e Complexos
 
 - [x] 23-1: Updates Simples
 - [x] 23-2: Updates Complexos - Arrays - Parte 1
 - [x] 23-3: Updates Complexos - Arrays - Parte 2
-- [x] 23-4: _[Projeto - Commerce](https://github.com/tryber/sd-010-a-mongodb-commerce/pull/57)_ - ([Requisitos](https://github.com/tryber/sd-010-a-mongodb-commerce#requisitos-do-projeto))_
+- [x] 23-4: _[Projeto - Commerce](https://github.com/tryber/sd-010-a-mongodb-commerce/pull/57)_ - ([Requisitos](https://github.com/tryber/sd-010-a-mongodb-commerce#requisitos-do-projeto))
 
 ##### Bloco 24: MongoDB: Aggregation Framework
 
 - [x] 24-1: Aggregation Framework - Parte 1
 - [x] 24-2: Aggregation Framework - Parte 2
-- [x] 24-3: _[Projeto - Aggregations](https://github.com/tryber/sd-010-a-mongodb-aggregations/pull/67)_ - ([Requisitos](https://github.com/tryber/sd-010-a-mongodb-aggregations#requisitos-do-projeto))_
+- [x] 24-3: _[Projeto - Aggregations](https://github.com/tryber/sd-010-a-mongodb-aggregations/pull/67)_ - ([Requisitos](https://github.com/tryber/sd-010-a-mongodb-aggregations#requisitos-do-projeto))
 
 ##### Bloco 25: Introdução ao desenvolvimento Web com NodeJS
 
@@ -195,7 +195,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 25-3: Testes com NodeJS
 - [x] 25-4: Express: HTTP com Node.js
 - [x] 25-5: Express: Middlewares
-- [x] 25-6: _[Projeto - Talk Manager](https://github.com/tryber/sd-010-a-project-talker-manager/pull/76)_ - ([Requisitos](https://github.com/tryber/sd-010-a-project-talker-manager#requisitos-do-projeto))_
+- [x] 25-6: _[Projeto - Talk Manager](https://github.com/tryber/sd-010-a-project-talker-manager/pull/76)_ - ([Requisitos](https://github.com/tryber/sd-010-a-project-talker-manager#requisitos-do-projeto))
 
 ##### Bloco 26: NodeJS: Camada de Serviço e Arquitetura Rest e Restful
 
@@ -204,38 +204,38 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 26-2: Arquitetura de Software - Camada de Controller e Service
 - [x] 26-3: Arquitetura Web - Rest e Restful
 - [x] 26-4: Arquitetura de Software - Testando as Camadas
-- [x] 26-5 _[Projeto - Store Manager](https://github.com/tryber/sd-010-a-store-manager/pull/90)_ - ([Requisitos](https://github.com/tryber/sd-010-a-store-manager))_
+- [x] 26-5 _[Projeto - Store Manager](https://github.com/tryber/sd-010-a-store-manager/pull/90)_ - ([Requisitos](https://github.com/tryber/sd-010-a-store-manager))
 
 ##### Bloco 27: Autenticação e Upload de Arquivos
 
 - [x] 27-1: NodeJS - JWT - (JSON Web Token)
 - [x] 27-2 NodeJS - Upload de arquivos com `multer`
 - [x] 27-3 NodeJS - Testando APIs com Testes de Integração
-- [x] 27-4 _[Projeto - Cook Master](https://github.com/tryber/sd-010-a-cookmaster/pull/80)_ - ([Requisitos](https://github.com/tryber/sd-010-a-cookmaster#requisitos-do-projeto))_
+- [x] 27-4 _[Projeto - Cook Master](https://github.com/tryber/sd-010-a-cookmaster/pull/80)_ - ([Requisitos](https://github.com/tryber/sd-010-a-cookmaster#requisitos-do-projeto))
 
 ##### Bloco 28: Deployment
 
 - [x] 28-1: Introdução - Deploy
 - [x] 28-1: Infraestrutura - Deploy com Heroku
 - [x] 28-2: Deploy - Gerenciadores de Processos
-- [x] 28-3: _[Projeto - Stranger Things (Back End)](https://github.com/tryber/sd-010-a-stranger-things-backend/pull/69)_ - ([Requisitos](https://github.com/tryber/sd-010-a-stranger-things#requisitos-do-projeto))_
-- [x] 28-3: _[Projeto - Stranger Things (Front End)](https://github.com/tryber/sd-010-a-stranger-things-frontend/pull/71)_ - ([Requisitos](https://github.com/tryber/sd-010-a-stranger-things#requisitos-do-projeto))_
+- [x] 28-3: _[Projeto - Stranger Things (Back End)](https://github.com/tryber/sd-010-a-stranger-things-backend/pull/69)_ - ([Requisitos](https://github.com/tryber/sd-010-a-stranger-things#requisitos-do-projeto))
+- [x] 28-3: _[Projeto - Stranger Things (Front End)](https://github.com/tryber/sd-010-a-stranger-things-frontend/pull/71)_ - ([Requisitos](https://github.com/tryber/sd-010-a-stranger-things#requisitos-do-projeto))
 
 ##### Bloco 29: Arquitetura: SOLID e ORM
 
 - [x] 29-1: Arquitetura - Princípios SOLID
 - [x] 29-2: ORM - Interface da aplicação com o banco de dados
 - [x] 29-3: ORM - Associations
-- [x] 29-4: _[Projeto - API de Blogs](https://github.com/tryber/sd-010-a-project-blogs-api/pull/15)_ - ([Requisitos](https://github.com/tryber/sd-010-a-project-blogs-api#lista-de-requisitos))_
+- [x] 29-4: _[Projeto - API de Blogs](https://github.com/tryber/sd-010-a-project-blogs-api/pull/15)_ - ([Requisitos](https://github.com/tryber/sd-010-a-project-blogs-api#lista-de-requisitos))
 
 
 ##### Bloco 30: Sockets
 
-- [ ] 30-1: Arquitetura de Software - Camada de View
-- [ ] 30-2: Sockets - TCP/UDP & NET
-- [ ] 30-3: Sockets - Socket.io
-- [ ] 30-4: Sockets - Praticando Socket.io
-- [ ] 30-5: Projeto - Webchat
+- [x] 30-1: Arquitetura de Software - Camada de View
+- [x] 30-2: Sockets - TCP/UDP & NET
+- [x] 30-3: Sockets - Socket.io
+- [x] 30-4: Sockets - Praticando Socket.io
+- [x] 30-5: _[Projeto - WebChat](https://github.com/tryber/sd-010-a-project-webchat/pull/61)_ - ([Requisitos](https://github.com/tryber/sd-010-a-project-webchat#lista-de-requisitos))
 
 ##### Bloco 31: Projeto - App de Delivery
 

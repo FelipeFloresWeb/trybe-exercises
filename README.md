@@ -142,7 +142,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 19-1: _[Projeto - App de Receitas - Projeto Final en Grupo](https://github.com/tryber/sd-010-a-project-recipes-app/pull/1004)
 
-## Desenvolvimento Back-end :hourglass_flowing_sand:
+## Desenvolvimento Back-end ✔️
 
 #### Bloco 19: Introdução à SQL
 - [x] 19.1: Introdução - Back-end
@@ -239,23 +239,23 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 31: Projeto - App de Delivery
 
-- [ ] 31-1: Projeto - App de Delivery
+- [x] 31-1: _[Projeto - Delivery App](https://github.com/tryber/sd-010-a-project-delivery-app/pull/485)_ - ([Requisitos](https://github.com/tryber/sd-010-a-project-delivery-app#requisitos-do-projeto))
 
 ## Ciência da Computação :hourglass_flowing_sand:
 
 #### Bloco 32: Introdução à Python
 
-- [ ] 32-1: Introdução - Ciência da Computação
-- [ ] 32-1: Aprendendo Python
-- [ ] 32-2: Entrada e Saída de Dados
-- [ ] 32-3: Testes
-- [ ] 32-4: Projeto - Job Insights
+- [x] 32-1: Introdução - Ciência da Computação
+- [x] 32-1: Aprendendo Python
+- [x] 32-2: Entrada e Saída de Dados
+- [x] 32-3: Testes
+- [x] 32-4: _[Projeto - Job Insights](https://github.com/tryber/sd-010-a-project-job-insights/pull/41)_ - ([Requisitos](https://github.com/tryber/sd-010-a-project-job-insights#requisitos))
 
 ### Bloco 33: Programação Orientada a Objetos e Padrões de Projeto
 
-- [ ] 33-1: Introdução à programação orientada a objetos
-- [ ] 33-2: Herança, Composição e Interfaces
-- [ ] 33-3: Padrões de projeto
+- [x] 33-1: Introdução à programação orientada a objetos
+- [x] 33-2: Herança, Composição e Interfaces
+- [x] 33-3: Padrões de projeto
 - [ ] 33-4: Projeto - Relatórios de Estoque
 
 #### Bloco 34: Redes e Raspagem de Dados

@@ -241,7 +241,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 31-1: _[Projeto - Delivery App](https://github.com/tryber/sd-010-a-project-delivery-app/pull/485)_ - ([Requisitos](https://github.com/tryber/sd-010-a-project-delivery-app#requisitos-do-projeto))
 
-## Ciência da Computação :hourglass_flowing_sand:
+## Ciência da Computação ✔️
 
 #### Bloco 32: Introdução à Python
 
@@ -256,33 +256,33 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 33-1: Introdução à programação orientada a objetos
 - [x] 33-2: Herança, Composição e Interfaces
 - [x] 33-3: Padrões de projeto
-- [ ] 33-4: Projeto - Relatórios de Estoque
+- [x] 33-4: Projeto - Relatórios de Estoque
 
 #### Bloco 34: Redes e Raspagem de Dados
 
-- [ ] 34-1: Arquitetura de redes
-- [ ] 34-2: Redes de computadores, ferramentas e segurança
-- [ ] 34-3: Raspagem de Dados
-- [ ] 34-4: Projeto - Tech news
+- [x] 34-1: Arquitetura de redes
+- [x] 34-2: Redes de computadores, ferramentas e segurança
+- [x] 34-3: Raspagem de Dados
+- [x] 34-4: Projeto - Tech news
 
 #### Bloco 35: Algoritmos
 
-- [ ] 35-1: Complexidade de Algoritmos
-- [ ] 35-2: Recursividade e Estratégias para solução de problemas
-- [ ] 35-3: Algoritmos de ordenação e busca
-- [ ] 35-4: Projeto - Algoritmos
+- [x] 35-1: Complexidade de Algoritmos
+- [x] 35-2: Recursividade e Estratégias para solução de problemas
+- [x] 35-3: Algoritmos de ordenação e busca
+- [x] 35-4: Projeto - Algoritmos
 
 #### Bloco 36: Estrutura de Dados I: Arrays, Hashmaps e Sets
 
-- [ ] 36-1: Arquitetura de Computadores
-- [ ] 36-2: Arrays
-- [ ] 36-3: Hashmap e Dict
-- [ ] 36-4: Set
-- [ ] 36-5: Projeto - Restaurant Orders
+- [x] 36-1: Arquitetura de Computadores
+- [x] 36-2: Arrays
+- [x] 36-3: Hashmap e Dict
+- [x] 36-4: Set
+- [x] 36-5: Projeto - Restaurant Orders
 
 #### Bloco 37: Estrutura de Dados II: Listas, Filas e Pilhas
 
-- [ ] 37-1: Nó e Listas Encadeadas
-- [ ] 37-2: Deque
-- [ ] 37-3: Pilhas
-- [ ] 37-4: Projeto - TING - Trybe Is Not Google
+- [x] 37-1: Nó e Listas Encadeadas
+- [x] 37-2: Deque
+- [x] 37-3: Pilhas
+- [x] 37-4: Projeto - TING - Trybe Is Not Google
